@@ -13,6 +13,10 @@ main {
 	animation-fill-mode: forwards;
 }
 
+main.quests {
+	justify-content: flex-start;
+}
+
 @keyframes start {
 	0% {
 		height: 0;

@@ -1,0 +1,142 @@
+.quest {
+	background-color: rgb(22, 22, 22);
+	width: 70%;
+	height: 4em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto 1% auto;
+	border: 5px solid rgb(14, 13, 13);
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.quest.completed {
+	background-color: #3e3e3e;
+	border: 5px solid rgb(36, 36, 36);
+}
+
+.quest.completed button {
+	background-color: rgb(36, 36, 36);
+	border: 5px solid rgb(36, 36, 36);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.quest.completed .questinfo span:nth-of-type(2),
+.quest.completed .questEvent span {
+	color: black;
+}
+
+.locationwitcher summary {
+	font-weight: bold;
+	font-size: 30px;
+	color: gray;
+	cursor: pointer;
+}
+
+.locationwitcher[open] summary {
+	color: white;
+}
+
+.questinfo {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-left: 2%;
+	width: 50%;
+	text-align: left;
+}
+
+.questinfo span {
+	width: 100%;
+}
+
+.questinfo span:nth-of-type(2) {
+	color: red;
+	font-size: 16px;
+}
+
+.locationwitcher[open] {
+	max-height: 35%;
+}
+.locationwitcher[open] > *:not(summary) {
+	animation: details-show 350ms ease-in-out;
+}
+
+.locationwitcher[open] details summary {
+	font-size: 18px;
+	text-align: center;
+	list-style-type: none;
+	color: gray;
+	background-color: rgb(22, 22, 22);
+	margin: 10px 0;
+	width: 100%;
+}
+
+.locationwitcher details[open] summary {
+	color: white;
+}
+
+.locationwitcher details[open] > *:not(summary) {
+	animation: details-show 350ms ease-in-out;
+}
+
+.locationwitcher {
+	width: 100%;
+	overflow-y: scroll;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	background-color: rgb(44, 42, 42);
+	border-bottom: 3px solid red;
+	border-top: 3px solid red;
+	margin-bottom: 30px;
+	padding: 12px 0;
+}
+
+.locationwitcher::-webkit-scrollbar {
+	display: none;
+}
+
+.locationwitcher:first-of-type {
+	margin-top: 4%;
+}
+
+.questEvent span {
+	color: red;
+	margin-right: 3%;
+}
+
+.questEvent {
+	margin-right: 2%;
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.questEvent button {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color: rgb(17, 17, 17);
+	border: 3px solid black;
+	border-radius: 300px;
+	padding: 22px;
+}
+
+@keyframes details-show {
+	from {
+		opacity: 0;
+		transform: var(--details-translate, translateY(-0.5em));
+	}
+}
