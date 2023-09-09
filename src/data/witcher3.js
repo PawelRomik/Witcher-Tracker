@@ -1,4 +1,5 @@
-const quests = [
+
+const whiteorchard = [
 {
     id: 0, 
     name: 'Lilac and Gooseberries',
@@ -109,7 +110,9 @@ const quests = [
     type: 'Treasure Hunt',
     level: '4',
     desc: ''
-},
+}]
+
+const velen = [
 {
     id: 14, 
     name: 'The Nilfgaardian Connection',
@@ -877,14 +880,468 @@ const quests = [
     type: 'Treasure Hunt',
     level: '34',
     desc: "The easiest way to get these marked on the map is to buy the worn-out and faded notes from Éibhear Hattori."
-},
+}]
 
+const novigrad = [
+    {
+        id: 110, 
+        name: "Pyres of Novigrad",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '10',
+        desc: "After Imperial Audience"
+    },
+    {
+        id: 111, 
+        name: "Novigrad Dreaming",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '7',
+        desc: "After Pyres of Novigrad"
+    },
+    {
+        id: 112, 
+        name: "Broken Flowers",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '11',
+        desc: "After Novigrad Dreaming"
+    },
+    {
+        id: 113, 
+        name: "Get Junior",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '12',
+        desc: "After Broken Flowers"
+    },
+    {
+        id: 114, 
+        name: "Ciri's Story: Visiting Junior",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '9',
+        desc: "After Get Junior"
+    },
+    {
+        id: 115, 
+        name: "Count Reuven's Treasure",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '12',
+        desc: "After Get Junior"
+    },
+    {
+        id: 116, 
+        name: "A Favor for Radovid",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '9',
+        desc: "After Get Junior"
+    },
+    {
+        id: 117, 
+        name: "The Play's the Thing",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '11',
+        desc: "After Count Reuven's Treasure"
+    },
+    {
+        id: 118, 
+        name: "A Poet Under Pressure",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '13',
+        desc: "After The Play's the Thing"
+    },
+    {
+        id: 119, 
+        name: "Ciri's Story: Breakneck Speed",
+        location: 'Novigrad',
+        type: 'Main Quest',
+        level: '11',
+        desc: "After A Poet Under Pressure"
+    },
+    {
+        id: 120, 
+        name: "A Warm Welcome",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 121, 
+        name: "Drunken Rabble",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "Walk in front of the Golden Sturgeon, and you will come across two drunk butchers asking for some coins."
+    },
+    {
+        id: 122, 
+        name: "Karmic Justice",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 123, 
+        name: "Racists of Novigrad (Part I)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 124, 
+        name: "Racists of Novigrad (Part II)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 125, 
+        name: "Strangers in the Night",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 126, 
+        name: "Strumpet in Distress",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 127, 
+        name: "Suspicious Shakedown",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 128, 
+        name: "The Flame of Hatred",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 129, 
+        name: "The Most Truest of Basilisks",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 130, 
+        name: "The Price of Passage (Part I)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 131, 
+        name: "The Price of Passage (Part II)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 132, 
+        name: "The Price of Passage (Part III)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 133, 
+        name: "Witch Hunter Raids",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 134, 
+        name: "Empty Coop",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: ""
+    },
+    {
+        id: 135, 
+        name: "Gwent: Big City Players",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: "You can start this quest by picking up a notice from Harborside's notice board or directly challenging the first opponent, Vivaldi."
+    },
+    {
+        id: 136, 
+        name: "Gwent: Playing Innkeeps",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: "While the quest may be started from a notice at Oxenfurt's notice board, it's usually started by playing with the Inkeep at the Inn at the Crossroads, as he is encountered very early in the main story."
+    },
+    {
+        id: 137, 
+        name: "Gwent: Playing Thaler",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: "This quest is only available if Vernon Roche was played prior to completing A Deadly Plot, as he is unable to direct you to Thaler.  However, if A Deadly Plot was completed prior to playing Roche, then Thaler will be played as part of Gwent: Old Pals, while this quest will be skipped."
+    },
+    {
+        id: 138, 
+        name: "Message from an Old Friend",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: ""
+    },
+    {
+        id: 139, 
+        name: "Novigrad, Closed City (Part II)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: "If you completed the part with the treasure of Lussi, Fritz, and Walter, the quest will be reactivated again after encountering and talking with the bandits northwest of The Golden Sturgeon."
+    },
+    {
+        id: 140, 
+        name: "Race: The Great Erasmus Vegelbud Memorial Derby",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '1',
+        desc: ""
+    },
+    {
+        id: 141, 
+        name: "The Dwarven Document Dilemma",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '2',
+        desc: ""
+    },
+    {
+        id: 142, 
+        name: "Hey, You Wanna Look at my Stuff?",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '6',
+        desc: ""
+    },
+    {
+        id: 143, 
+        name: "Haunted House",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '7',
+        desc: "You'll find the notice on Hierarch Square's notice board directing you to visit the house."
+    },
+    {
+        id: 144, 
+        name: "Hidden Messages of the Nilfgaardian Kind",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '8',
+        desc: ""
+    },
+    {
+        id: 145, 
+        name: "Novigrad Hospitality",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '8',
+        desc: ""
+    },
+    {
+        id: 146, 
+        name: "Honor Among Thieves",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '9',
+        desc: "After Get Junior"
+    },
+    {
+        id: 147, 
+        name: "Of Dairy and Darkness",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '9',
+        desc: "This quest can be started 2 ways: find Aeramas' Abandoned Manor or find the Gildorf district shop and buy the related quest item there"
+    },
+    {
+        id: 148, 
+        name: "The Gangs of Novigrad",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '9',
+        desc: "After Get Junior"
+    },
+    {
+        id: 149, 
+        name: "Rough Neighborhood (Part I)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '10',
+        desc: ""
+    },
+    {
+        id: 150, 
+        name: "Rough Neighborhood (Part II)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '10',
+        desc: ""
+    },
+    {
+        id: 151, 
+        name: "A Barnful of Trouble",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '11',
+        desc: ""
+    },
+    {
+        id: 152, 
+        name: "Novigrad, Closed City (Part I)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '11',
+        desc: "While walking around in Novigrad, Geralt of Rivia can be called over by a woman named Lussi in the upper middle of St.Gregory's Bridge towards Temple Isle"
+    },
+    {
+        id: 153, 
+        name: "A Dangerous Game",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: "After A Poet Under Pressure"
+    },
+    {
+        id: 154, 
+        name: "A Matter of Life and Death",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: "After Count Reuven's Treasure"
+    },
+    {
+        id: 155, 
+        name: "A Walk on the Waterfront",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: ""
+    },
+    {
+        id: 156, 
+        name: "An Eye for an Eye",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: "After Get Junior go talk to Roche"
+    },
+    {
+        id: 157, 
+        name: "Fencing Lessons",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: "After Broken Flowers"
+    },
+    {
+        id: 158, 
+        name: "Redania's Most Wanted",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: "After A Favor for Radovid"
+    },
+    {
+        id: 159, 
+        name: "Spooked Mare",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '12',
+        desc: ""
+    },
+    {
+        id: 160, 
+        name: "A Tome Entombed",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '13',
+        desc: ""
+    },
+    {
+        id: 161, 
+        name: "The Volunteer",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '13',
+        desc: ""
+    },
+    {
+        id: 162, 
+        name: "Warehouse of Woe",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '13',
+        desc: ""
+    },
+    {
+        id: 163, 
+        name: "A Deadly Plot",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: "After Now or Never"
+    },
+    {
+        id: 164, 
+        name: "A Deadly Plot",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: "After A Poet Under Pressure"
+    },
+    {
+        id: 165, 
+        name: "Now or Never",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: "After A Matter of Life and Death"
+    },
+    {
+        id: 166, 
+        name: "Out On Your Arse!",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: ""
+    },
+]
 
+const quests = [...whiteorchard,...velen,...novigrad];
 
-
-
-
-
-];
 
 export default quests;

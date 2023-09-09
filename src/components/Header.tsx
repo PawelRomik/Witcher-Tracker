@@ -2,6 +2,7 @@ import React from 'react';
 import witcherlogo from '../assets/ui/witcherlogo.png';
 import witcherlogo2 from '../assets/ui/witcher1logo.png';
 import witcherlogo3 from '../assets/ui/witcher2logo.png';
+import deski from '../assets/ui/deski.jpg';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../style/style.scss';
 
