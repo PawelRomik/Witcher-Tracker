@@ -124,6 +124,7 @@ function Wildhunt() {
 								</div>
 							</div>
 						))}
+					{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ''}
 					{completed
 						.sort((a, b) => Number(a.level) - Number(b.level))
 						.map((item) => (

@@ -21,7 +21,9 @@
 
 	background-color: rgb(28, 28, 28);
 	border: 5px solid black;
+	box-shadow: 0 0 1px 3px goldenrod;
 	background-repeat: no-repeat;
+	transition: 0.2s;
 	background-size: cover;
 }
 
@@ -36,13 +38,24 @@
 	right: 0;
 	width: 60px;
 	height: 35px;
-	border: 3px solid black;
-	color: red;
+	border: 3px solid goldenrod;
+	color: goldenrod;
 	font-weight: bold;
 	font-size: 22px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(33, 33, 33);
+	transition: 0.2s;
 	cursor: pointer;
+}
+
+.map button:hover {
+	background-color: rgb(52, 52, 52);
+	color: yellow;
+	border: 3px solid yellow;
+}
+
+.map div:has(button:hover) {
+	box-shadow: 0 0 1px 3px yellow;
 }

@@ -1339,9 +1339,253 @@ const novigrad = [
         level: '14',
         desc: ""
     },
+    {
+        id: 167, 
+        name: "The Nobleman Statuette",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: "Buy the Jade figurine from the merchant in Gildorf"
+    },
+    {
+        id: 168, 
+        name: "The Nobleman Statuette",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '14',
+        desc: "You find the Statuette during a A Dangerous Game inside Caesar Bilzen's house."
+    },
+    {
+        id: 169, 
+        name: "Little Red",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '15',
+        desc: ""
+    },
+    {
+        id: 170, 
+        name: "Carnal Sins",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '16',
+        desc: "After Cabaret"
+    },
+    {
+        id: 171, 
+        name: "A Feast for Crows",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '20',
+        desc: ""
+    },
+    {
+        id: 172, 
+        name: "Fists of Fury: Novigrad",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '23',
+        desc: "This quest may be started via its notice on Hierarch Square's notice board or simply encountering one of the spots where fist fights take place."
+    },
+    {
+        id: 173, 
+        name: "Of Swords and Dumplings",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '24',
+        desc: ""
+    },
+    {
+        id: 174, 
+        name: "A Final Kindness",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '26',
+        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
+    },
+    {
+        id: 175, 
+        name: "High Stakes",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '26',
+        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
+    },
+    {
+        id: 176, 
+        name: "It Takes Three to Tango",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '28',
+        desc: "In the event you romanced both Triss and Yennefer, both will come to you after Ciri's meeting with the Lodge of Sorceresses during Final Preparations"
+    },
+    {
+        id: 177, 
+        name: "Reason of State",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '30',
+        desc: "After Blindingly Obvious"
+    },
+    {
+        id: 178, 
+        name: "Never Trust Children (Part 1)",
+        location: 'Novigrad',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: ""
+    },
+    {
+        id: 179, 
+        name: "Contract: An Elusive Thief",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '13',
+        desc: "The quest starts by picking up Contract: Imp from Hierarch Square's notice board and then speaking to Sylvester Amello."
+    },
+    {
+        id: 180, 
+        name: "Contract: The Apiarian Phantom",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '14',
+        desc: "find the notice on Yantra's notice board"
+    },
+    {
+        id: 181, 
+        name: "Contract: Deadly Delights",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '15',
+        desc: "This quest can only be started by finding the notice on Harborside's notice board."
+    },
+    {
+        id: 182, 
+        name: "Contract: The White Lady",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '16',
+        desc: "pick up the contract off Farcorners' notice board"
+    },
+    {
+        id: 183, 
+        name: "Contract: Doors Slamming Shut",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '24',
+        desc: "This quest can only be started from the contract notice found either on Hierarch Square's notice board or Gildorf's notice board"
+    },
+    {
+        id: 184, 
+        name: "Contract: Lord of the Wood",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '25',
+        desc: "To start this quest, pick up the contract notice off of either the Cunny of the Goose's notice board or Farcorners'"
+    },
+    {
+        id: 185, 
+        name: "Contract: The Oxenfurt Drunk",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '26',
+        desc: "To start the quest, pick up the contract from Oxenfurt's notice board"
+    },
+    {
+        id: 186, 
+        name: "Contract: The Creature from Oxenfurt Forest",
+        location: 'Novigrad',
+        type: 'Contract',
+        level: '35',
+        desc: "Pick up this contract off Oxenfurt's notice board"
+    },
+    {
+        id: 187, 
+        name: "Coast of Wrecks",
+        location: 'Novigrad',
+        type: 'Treasure Hunt',
+        level: '13',
+        desc: ""
+    },
+    {
+        id: 188, 
+        name: "Scavenger Hunt: Cat School Gear",
+        location: 'Novigrad',
+        type: 'Treasure Hunt',
+        level: '17',
+        desc: "You can start this quest either by finding one of the diagrams, finding Julia Keynon's diary, or buying one of the associated maps, with the first or second in Blackbough, the third in Crow's Perch, and the fourth in Lindenvale."
+    },
+    {
+        id: 189, 
+        name: "Scavenger Hunt: Cat School Gear/Part 1",
+        location: 'Novigrad',
+        type: 'Treasure Hunt',
+        level: '23',
+        desc: "The easiest way to get all the markers on the map is to buy Adalbert Kermith's first map from Blackbough's gwent merchant."
+    },
+    {
+        id: 190, 
+        name: "Scavenger Hunt: Cat School Gear/Part 3",
+        location: 'Novigrad',
+        type: 'Treasure Hunt',
+        level: '29',
+        desc: "The easiest way to get all the markers on the map is to buy Adalbert Kermith's third map from Crow's Perch's quartermaster."
+    }
 ]
 
-const quests = [...whiteorchard,...velen,...novigrad];
+const skellige =[{
+    id: 191, 
+    name: "Test",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '29',
+    desc: ""
+}];
+
+const kaermorhen = [
+    {
+        id: 192, 
+        name: "Test",
+        location: 'Kaer Morhen',
+        type: 'Main Quest',
+        level: '29',
+        desc: ""
+    }
+];
+
+const endgame = [{
+    id: 193, 
+    name: "Test",
+    location: 'Act II',
+    type: 'Main Quest',
+    level: '29',
+    desc: ""
+}];
+
+const dlcOne = [
+    {
+        id: 194, 
+        name: "Test",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '29',
+        desc: ""
+    }
+];
+
+const dlcTwo = [
+    {
+        id: 195, 
+        name: "Test",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '29',
+        desc: ""
+    }
+];
+
+
+const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame,...dlcOne,...dlcTwo];
 
 
 export default quests;

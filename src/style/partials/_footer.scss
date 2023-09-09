@@ -4,14 +4,14 @@ footer {
 	height: 10vh;
 	text-align: center;
 	color: white;
-	border-top: 4px solid red;
-	border-bottom: 4px solid red;
 	animation: start2 1s linear;
 	transition: 0.1s 0.3s;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	overflow: hidden;
+	border-top: 4px solid rgb(31, 31, 31);
+	background-image: url('/assets/ui/bgc.png');
 }
 
 footer a {
@@ -39,21 +39,6 @@ footer a {
 	font-size: 32px;
 	margin-bottom: 25px;
 	margin-right: 25px;
-}
-
-footer.witcher3_footer {
-	border-top: 4px solid red;
-	border-bottom: 4px solid red;
-}
-
-footer.witcher1_footer {
-	border-top: 4px solid rgb(255, 149, 0);
-	border-bottom: 4px solid rgb(255, 149, 0);
-}
-
-footer.witcher2_footer {
-	border-top: 4px solid rgb(0, 255, 200);
-	border-bottom: 4px solid rgb(0, 255, 200);
 }
 
 @keyframes start2 {

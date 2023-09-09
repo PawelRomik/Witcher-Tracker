@@ -7,7 +7,6 @@
 	align-items: center;
 	margin: 0 auto 1% auto;
 	border: 5px solid rgb(14, 13, 13);
-	border-radius: 25px;
 	cursor: pointer;
 }
 
@@ -22,9 +21,19 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: red;
+	color: goldenrod;
 	font-size: 25px;
 	font-weight: bold;
+}
+
+.locationwitcher hr {
+	border: 3px dashed rgb(77, 77, 77);
+	margin: 10px;
+}
+
+.quest.completed button:hover {
+	background-color: rgb(16, 16, 16);
+	border: 5px solid black;
 }
 
 .quest.completed .questinfo span:nth-of-type(2),
@@ -32,15 +41,47 @@
 	color: black;
 }
 
-.locationwitcher summary {
+.locationwitcher > summary {
 	font-weight: bold;
 	font-size: 30px;
 	color: gray;
+	transition: 0.3s;
+	text-align: left;
+	cursor: pointer;
+	margin-right: 1%;
+}
+
+.quests details:nth-of-type(8) > summary,
+.quests details:nth-of-type(8) span:nth-of-type(2),
+.quests details:nth-of-type(8) .questEvent span {
+	color: rgb(170, 81, 81);
+}
+
+.quests details:nth-of-type(7) > summary,
+.quests details:nth-of-type(7) span:nth-of-type(2),
+.quests details:nth-of-type(7) .questEvent span {
+	color: rgb(81, 133, 170);
+}
+
+.quests details:nth-of-type(8)[open] > summary {
+	color: rgb(248, 146, 146);
+}
+
+.quests details:nth-of-type(7)[open] > summary {
+	color: rgb(120, 196, 251);
+}
+.locationwitcher summary {
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	transition: 0.3s;
+
+	text-align: center;
 	cursor: pointer;
 }
 
 .locationwitcher[open] summary {
-	color: white;
+	color: goldenrod;
 }
 
 .questinfo {
@@ -58,7 +99,7 @@
 }
 
 .questinfo span:nth-of-type(2) {
-	color: red;
+	color: goldenrod;
 	font-size: 16px;
 }
 
@@ -88,13 +129,14 @@
 	width: 100%;
 	height: auto;
 	overflow-y: scroll;
-
+	border-bottom: 4px solid rgb(31, 31, 31);
+	border-right: 4px solid rgb(31, 31, 31);
+	border-top: 2px solid rgb(89, 89, 89);
+	border-left: 2px solid rgb(89, 89, 89);
 	text-align: center;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 	background-color: rgb(44, 42, 42);
-	border-bottom: 3px solid red;
-	border-top: 3px solid red;
 	margin-bottom: 30px;
 	padding: 12px 0;
 }
@@ -108,7 +150,7 @@
 }
 
 .questEvent span {
-	color: red;
+	color: goldenrod;
 	margin-right: 3%;
 }
 
@@ -126,8 +168,11 @@
 	cursor: pointer;
 	background-color: rgb(17, 17, 17);
 	border: 3px solid black;
-	border-radius: 300px;
 	padding: 22px;
+}
+
+.questEvent button:hover {
+	background-color: rgb(35, 35, 35);
 }
 
 @keyframes details-show {
