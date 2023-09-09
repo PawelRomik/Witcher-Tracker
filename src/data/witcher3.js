@@ -1535,53 +1535,440 @@ const novigrad = [
 
 const skellige =[{
     id: 191, 
-    name: "Test",
+    name: "Destination: Skellige",
     location: 'Skellige',
     type: 'Main Quest',
-    level: '29',
+    level: '16',
+    desc: "After Imperial Audience"
+},
+{
+    id: 192, 
+    name: "The King is Dead - Long Live the King",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '16',
+    desc: "After Destination: Skellige"
+},
+{
+    id: 193, 
+    name: "Echoes of the Past",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '17',
+    desc: "After The King is Dead - Long Live the King"
+},{
+    id: 194, 
+    name: "Missing Persons",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '15',
+    desc: "After Echoes of the Past"
+},{
+    id: 195, 
+    name: "Nameless",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '14',
+    desc: "After Missing Persons"
+},{
+    id: 196, 
+    name: "The Calm Before the Storm",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '14',
+    desc: "After Nameless"
+},{
+    id: 197, 
+    name: "A Mysterious Passenger",
+    location: 'Skellige',
+    type: 'Main Quest',
+    level: '1',
+    desc: "In order to pick this up, one must have completed The Calm Before the Storm before Ciri's Story: Out of the Shadows."
+},{
+    id: 198, 
+    name: "Call of the Wild",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
     desc: ""
-}];
+},{
+    id: 199, 
+    name: "Farting Trolls",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},{
+    id: 200, 
+    name: "Siren's Call",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},{
+    id: 201, 
+    name: "Never Trust Children (Part II)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},
+{
+    id: 202, 
+    name: "The Four Faces of Hemdall",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},{
+    id: 203, 
+    name: "Woe is Me",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},{
+    id: 204, 
+    name: "Yustianna Disturbed",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: ""
+},{
+    id: 205, 
+    name: "Brave Fools Die Young",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: ""
+},{
+    id: 206, 
+    name: "Gwent: Skellige Style",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: "This quest can be picked up any time from the notice board at Kaer Trolde Harbor"
+},{
+    id: 207, 
+    name: "The Heroes' Pursuits: Fayrlund",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: "After The Heroes' Pursuits: For the Goddess' Glory!"
+},
+{
+    id: 208, 
+    name: "The Heroes' Pursuits: For the Goddess' Glory!",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: "This quest may be started at any of the Heroes' Pursuits horse race starts on Ard Skellig, by speaking to Svana, or finding the notice on Larvik's notice board in Hindarsfjall."
+},{
+    id: 209, 
+    name: "The Heroes' Pursuits: Fyresdal",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: "After The Heroes' Pursuits: For the Goddess' Glory!"
+},{
+    id: 210, 
+    name: "The Heroes' Pursuits: Kaer Trolde",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: "After The Heroes' Pursuits: For the Goddess' Glory!"
+},
+{
+    id: 211, 
+    name: "Worthy of Trust (Part I)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: ""
+},{
+    id: 212, 
+    name: "Worthy of Trust (Part II)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: ""
+},{
+    id: 213, 
+    name: "Worthy of Trust (Part III)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '1',
+    desc: ""
+},{
+    id: 214, 
+    name: "Fists of Fury: Champion of Champions",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '11',
+    desc: "This is the final fist-fighting quest in the base game, issued after becoming the fist-fighting champion in all three main regions that have fist fights: Velen, Novigrad, and Skellige."
+},{
+    id: 215, 
+    name: "A Hallowed Horn",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '12',
+    desc: ""
+},{
+    id: 216, 
+    name: "Flesh for Sale",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '12',
+    desc: ""
+},{
+    id: 217, 
+    name: "Free Spirit",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '13',
+    desc: ""
+},{
+    id: 218, 
+    name: "From a Land Far, Far Away",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '13',
+    desc: ""
+},{
+    id: 219, 
+    name: "Master of the Arena",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: ""
+},{
+    id: 220, 
+    name: "Stranger in a Strange Land",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: "After Contract: The Phantom of Eldberg"
+},{
+    id: 221, 
+    name: "The Cave of Dreams",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: "After Stranger in a Strange Land"
+},{
+    id: 222, 
+    name: "The Nithing",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: ""
+},{
+    id: 223, 
+    name: "The Price of Honor",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: ""
+},{
+    id: 224, 
+    name: "A Bard's Beloved",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '14',
+    desc: ""
+}, {
+    id: 225, 
+    name: "Armed Assault",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: ""
+}, {
+    id: 226, 
+    name: "For Fame and Glory",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: ""
+}, {
+    id: 227, 
+    name: "The Last Wish",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: "After The Calm Before the Storm"
+}, {
+    id: 228, 
+    name: "An Unpaid Debt",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: "After Stranger in a Strange Land"
+}, {
+    id: 229, 
+    name: "In Wolf's Clothing",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: "This quest can be picked up either through the main quests, Missing Persons and Nameless, or from the notice board at Larvik."
+}, {
+    id: 230, 
+    name: "The Family Blade",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '15',
+    desc: ""
+}, {
+    id: 231, 
+    name: "The Path of Warriors",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '16',
+    desc: ""
+}, {
+    id: 232, 
+    name: "Possession",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '17',
+    desc: "After The King is Dead – Long Live the King"
+}, {
+    id: 233, 
+    name: "The Lord of Undvik",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '17',
+    desc: "After The King is Dead – Long Live the King"
+}, {
+    id: 234, 
+    name: "Coronation",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '18',
+    desc: "After King's Gambit"
+}, {
+    id: 235, 
+    name: "Crime and Punishment (Part I)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '18',
+    desc: ""
+}, {
+    id: 236, 
+    name: "Crime and Punishment (Part II)",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '18',
+    desc: ""
+}, {
+    id: 237, 
+    name: "King's Gambit",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '18',
+    desc: "After The Lord of Undvik and Possession"
+}, {
+    id: 238, 
+    name: "Iron Maiden",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '19',
+    desc: ""
+}, {
+    id: 239, 
+    name: "Hard Times",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '21',
+    desc: ""
+}, {
+    id: 240, 
+    name: "Abandoned Sawmill",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '24',
+    desc: ""
+}, {
+    id: 241, 
+    name: "Finders Keepers",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '24',
+    desc: ""
+}, {
+    id: 242, 
+    name: "Practicum in Advanced Alchemy",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '24',
+    desc: ""
+}, {
+    id: 243, 
+    name: "Shock Therapy",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '24',
+    desc: ""
+}, {
+    id: 244, 
+    name: "Peace Disturbed",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '25',
+    desc: ""
+}, {
+    id: 245, 
+    name: "Taken as a Lass",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '25',
+    desc: ""
+}, {
+    id: 246, 
+    name: "The Sad Tale of the Grossbart Brothers",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '26',
+    desc: ""
+}, 
+{
+    id: 247, 
+    name: "The Tower Outta Nowheres",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '30',
+    desc: ""
+}, 
+{
+    id: 248, 
+    name: "Fists of Fury: Skellige",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '30',
+    desc: "This quest may be started via its notice on Kaer Trolde Harbor's notice board or simply encountering one of the spots where fist fights take place"
+}, {
+    id: 249, 
+    name: "Contract: Strange Beast",
+    location: 'Skellige',
+    type: 'Secondary Quest',
+    level: '16',
+    desc: "This quest may be started via its notice on Kaer Trolde Harbor's notice board or simply encountering one of the spots where fist fights take place"
+},];
 
 const kaermorhen = [
-    {
-        id: 192, 
-        name: "Test",
-        location: 'Kaer Morhen',
-        type: 'Main Quest',
-        level: '29',
-        desc: ""
-    }
+
 ];
 
-const endgame = [{
-    id: 193, 
-    name: "Test",
-    location: 'Act II',
-    type: 'Main Quest',
-    level: '29',
-    desc: ""
-}];
+const endgame = [
+
+];
 
 const dlcOne = [
-    {
-        id: 194, 
-        name: "Test",
-        location: 'Hearts of Stone',
-        type: 'Main Quest',
-        level: '29',
-        desc: ""
-    }
+
 ];
 
 const dlcTwo = [
-    {
-        id: 195, 
-        name: "Test",
-        location: 'Blood and Wine',
-        type: 'Main Quest',
-        level: '29',
-        desc: ""
-    }
+
 ];
 
 

@@ -129,14 +129,13 @@
 	width: 100%;
 	height: auto;
 	overflow-y: scroll;
-	border-bottom: 4px solid rgb(31, 31, 31);
+	border-bottom: 4px solid rgb(0, 0, 0);
 	border-right: 4px solid rgb(31, 31, 31);
-	border-top: 2px solid rgb(89, 89, 89);
-	border-left: 2px solid rgb(89, 89, 89);
+	border-top: 2px solid rgb(145, 145, 145);
 	text-align: center;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-	background-color: rgb(44, 42, 42);
+	background-color: rgb(29, 28, 28);
 	margin-bottom: 30px;
 	padding: 12px 0;
 }
