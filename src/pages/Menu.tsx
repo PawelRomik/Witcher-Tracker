@@ -56,9 +56,6 @@ function Menu() {
 				changeContent(
 					<>
 						<div className='witcher3_choose'>
-							<p>
-								Quests <i className='fa-solid fa-crown'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/wildhunt');
@@ -69,9 +66,6 @@ function Menu() {
 						</div>
 
 						<div className='witcher3_choose'>
-							<p>
-								Gwent Cards <i className='fa-solid fa-rug'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/gwent');
@@ -81,9 +75,6 @@ function Menu() {
 							</button>
 						</div>
 						<div className='witcher3_choose'>
-							<p>
-								Witcher Armor <i className='fa-solid fa-shield-halved'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/armor');

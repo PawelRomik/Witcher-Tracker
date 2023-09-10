@@ -2299,38 +2299,7 @@ const kaermorhen = [
 ];
 
 const endgame = [
-    {
-        id: 177, 
-        name: "Reason of State",
-        location: 'EndGame',
-        type: 'Secondary Quest',
-        level: '30',
-        desc: "After Blindingly Obvious"
-    },
-    {
-        id: 4, 
-        name: 'Faithful Friend',
-        location: 'EndGame',
-        type: 'Secondary Quest',
-        level: '30',
-        desc: 'This quest is only accessible during the Empress ending and it must be completed before Something Ends, Something Begins.'
-    },
-    {
-        id: 176, 
-        name: "It Takes Three to Tango",
-        location: 'EndGame',
-        type: 'Secondary Quest',
-        level: '28',
-        desc: "After Final Preparations"
-    },
-    {
-        id: 174, 
-        name: "A Final Kindness",
-        location: 'EndGame',
-        type: 'Secondary Quest',
-        level: '26',
-        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
-    },
+    
     {
         id: 301, 
         name: "Bald Mountain",
@@ -2439,19 +2408,42 @@ const endgame = [
         type: 'Main Quest',
         level: '30',
         desc: "After Tedd Deireadh, The Final Age"
+    },{
+        id: 177, 
+        name: "Reason of State",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '30',
+        desc: "After Blindingly Obvious"
+    },
+    {
+        id: 4, 
+        name: 'Faithful Friend',
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '30',
+        desc: 'This quest is only accessible during the Empress ending and it must be completed before Something Ends, Something Begins.'
+    },
+    {
+        id: 176, 
+        name: "It Takes Three to Tango",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '28',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 174, 
+        name: "A Final Kindness",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '26',
+        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
     }
 ];
 
-const dlcOne = [
 
-];
-
-const dlcTwo = [
-
-];
-
-
-const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame,...dlcOne,...dlcTwo];
+const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame];
 
 
 export default quests;

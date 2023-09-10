@@ -43,7 +43,7 @@ const Header = ({
 					>
 						<img src={logos[counter]} alt='logo'></img>
 					</button>
-					<h1>Witcher {counter === 0 ? '3' : counter === 1 ? '2' : '1'}</h1>
+					<h1>The Witcher {counter === 0 ? '3' : counter === 1 ? '2' : '1'}</h1>
 					<h3>Tracker</h3>
 				</div>
 			</header>

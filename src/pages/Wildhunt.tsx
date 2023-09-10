@@ -98,13 +98,18 @@ function Wildhunt() {
 				(quest) => !completedQuests.includes(quest.id)
 			);
 
+			// Check if the type is "main quest"
+			const isMainQuest = type === 'Main Quest';
+
 			return (
 				<details key={type}>
 					<summary>
 						{type} - {changeCompletion(typeQuest)}
 					</summary>
 					{incompleted
-						.sort((a, b) => Number(a.level) - Number(b.level))
+						.sort((a, b) =>
+							isMainQuest ? 0 : Number(a.level) - Number(b.level)
+						)
 						.map((item) => (
 							<div
 								className={`quest ${
@@ -132,7 +137,9 @@ function Wildhunt() {
 						))}
 					{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ''}
 					{completed
-						.sort((a, b) => Number(a.level) - Number(b.level))
+						.sort((a, b) =>
+							isMainQuest ? 0 : Number(a.level) - Number(b.level)
+						)
 						.map((item) => (
 							<div
 								className={`quest ${

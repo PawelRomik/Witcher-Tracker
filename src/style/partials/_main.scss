@@ -64,22 +64,15 @@ div.witcher3_choose img,
 div.witcher2_choose img,
 div.witcher_choose img {
 	width: 80%;
-	margin-top: 15px;
+	margin: 3em;
 	transition: 0.2s;
 }
 
 div.witcher3_choose img:hover {
 	cursor: pointer;
-	-webkit-filter: drop-shadow(0 0 15px #da0000);
-	filter: drop-shadow(0 0 15px #da0000);
-}
-div.witcher3_choose:nth-of-type(2) img:hover {
 	-webkit-filter: drop-shadow(0 0 15px #da7400);
 	filter: drop-shadow(0 0 15px #da7400);
-}
-div.witcher3_choose:nth-of-type(3) img:hover {
-	-webkit-filter: drop-shadow(0 0 15px #0045da);
-	filter: drop-shadow(0 0 15px #0045da);
+	transform: scale(1.03);
 }
 
 div.witcher_choose img:hover {
