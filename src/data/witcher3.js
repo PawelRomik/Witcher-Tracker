@@ -6,7 +6,7 @@ const whiteorchard = [
     location: 'White Orchard',
     type: 'Main Quest',
     level: '0',
-    desc: "It's the second main quest and the first following the tutorial quest"
+    desc: "It's the first main quest"
 },
 {
     id: 1, 
@@ -14,7 +14,7 @@ const whiteorchard = [
     location: 'White Orchard',
     type: 'Main Quest',
     level: '3',
-    desc: "It's the third main quest of The Witcher 3: Wild Hunt. It acts as a sub-quest to Lilac and Gooseberries as it must be completed before the player can continue that quest."
+    desc: "After Lilac and Gooseberries"
 },
 {
     id: 2, 
@@ -31,14 +31,6 @@ const whiteorchard = [
     type: 'Secondary Quest',
     level: '0',
     desc: ''
-},
-{
-    id: 4, 
-    name: 'Faithful Friend',
-    location: 'White Orchard',
-    type: 'Secondary Quest',
-    level: '30',
-    desc: 'This quest is only accessible during the Empress ending and it must be completed before Something Ends, Something Begins.'
 },
 {
     id: 5, 
@@ -1396,36 +1388,12 @@ const novigrad = [
         desc: ""
     },
     {
-        id: 174, 
-        name: "A Final Kindness",
-        location: 'Novigrad',
-        type: 'Secondary Quest',
-        level: '26',
-        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
-    },
-    {
         id: 175, 
         name: "High Stakes",
         location: 'Novigrad',
         type: 'Secondary Quest',
         level: '26',
         desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
-    },
-    {
-        id: 176, 
-        name: "It Takes Three to Tango",
-        location: 'Novigrad',
-        type: 'Secondary Quest',
-        level: '28',
-        desc: "In the event you romanced both Triss and Yennefer, both will come to you after Ciri's meeting with the Lodge of Sorceresses during Final Preparations"
-    },
-    {
-        id: 177, 
-        name: "Reason of State",
-        location: 'Novigrad',
-        type: 'Secondary Quest',
-        level: '30',
-        desc: "After Blindingly Obvious"
     },
     {
         id: 178, 
@@ -2331,7 +2299,147 @@ const kaermorhen = [
 ];
 
 const endgame = [
-
+    {
+        id: 177, 
+        name: "Reason of State",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '30',
+        desc: "After Blindingly Obvious"
+    },
+    {
+        id: 4, 
+        name: 'Faithful Friend',
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '30',
+        desc: 'This quest is only accessible during the Empress ending and it must be completed before Something Ends, Something Begins.'
+    },
+    {
+        id: 176, 
+        name: "It Takes Three to Tango",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '28',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 174, 
+        name: "A Final Kindness",
+        location: 'EndGame',
+        type: 'Secondary Quest',
+        level: '26',
+        desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
+    },
+    {
+        id: 301, 
+        name: "Bald Mountain",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '30',
+        desc: "After Blood on the Battlefield"
+    },
+    {
+        id: 302, 
+        name: "Final Preparations",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '1',
+        desc: "After Bald Mountain"
+    },
+    {
+        id: 303, 
+        name: "Blindingly Obvious",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Bald Mountain"
+    },{
+        id: 304, 
+        name: "The Great Escape",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Bald Mountain"
+    },
+    {
+        id: 305, 
+        name: "Payback",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Bald Mountain"
+    },{
+        id: 306, 
+        name: "Through Time and Space",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '26',
+        desc: "After Bald Mountain"
+    },
+    {
+        id: 307, 
+        name: "Battle Preparations",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 308, 
+        name: "The Sunstone",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 309, 
+        name: "Veni Vidi Vigo",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 310, 
+        name: "Child of the Elder Blood",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '31',
+        desc: "After Final Preparations"
+    },
+    {
+        id: 311, 
+        name: "Skjall's Grave",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '28',
+        desc: "After Child of the Elder Blood"
+    },
+    {
+        id: 312, 
+        name: "On Thin Ice",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '30',
+        desc: "After Battle Preparations"
+    },
+    {
+        id: 313, 
+        name: "Tedd Deireadh, The Final Age",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '30',
+        desc: "After On Thin Ice"
+    },{
+        id: 314, 
+        name: "Something Ends, Something Begins",
+        location: 'EndGame',
+        type: 'Main Quest',
+        level: '30',
+        desc: "After Tedd Deireadh, The Final Age"
+    }
 ];
 
 const dlcOne = [

@@ -75,7 +75,13 @@ function Wildhunt() {
 					<div className='map' onClick={() => changeMap(0)}>
 						<div>
 							<button onClick={() => changeMap(0)}>X</button>
-							<p>{quests[i].desc}</p>
+							<p>
+								{
+									quests.filter((obj) => {
+										return obj.id === i;
+									})[0].desc
+								}
+							</p>
 						</div>
 					</div>
 				);
