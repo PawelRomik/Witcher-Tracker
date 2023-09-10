@@ -98,7 +98,6 @@ function Wildhunt() {
 				(quest) => !completedQuests.includes(quest.id)
 			);
 
-			// Check if the type is "main quest"
 			const isMainQuest = type === 'Main Quest';
 
 			return (
