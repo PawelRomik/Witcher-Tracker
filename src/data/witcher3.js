@@ -1950,9 +1950,213 @@ const skellige =[{
     id: 249, 
     name: "Contract: Strange Beast",
     location: 'Skellige',
-    type: 'Secondary Quest',
+    type: 'Contract',
     level: '16',
-    desc: "This quest may be started via its notice on Kaer Trolde Harbor's notice board or simply encountering one of the spots where fist fights take place"
+    desc: ""
+},{
+    id: 250, 
+    name: "Contract: Strange Beast",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '17',
+    desc: "Find the notice on Arinbjorn's notice board"
+},{
+    id: 251, 
+    name: "Contract: Muire D'yaeblen",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '18',
+    desc: "Find the notice on Arinbjorn's notice board"
+},{
+    id: 252, 
+    name: "Contract: Here Comes the Groom",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '19',
+    desc: "This quest can be picked up two ways, either by picking up the notice off Svorlag's notice board, or finding the cave on your own."
+},{
+    id: 253, 
+    name: "Contract: In the Heart of the Woods",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '22',
+    desc: "You can pick up this quest either through the notice or by finding the group on the road southwest out of Fayrlund."
+},{
+    id: 254, 
+    name: "Contract: Missing Miners",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '27',
+    desc: "You can start this quest from the notice in Blandare or by finding one of the dead bodies on the road west of Miners' Camp (on the way to the cave)."
+},{
+    id: 255, 
+    name: "Contract: Dragon",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '28',
+    desc: "Pick up the contract on Fyresdal's notice board"
+},{
+    id: 256, 
+    name: "Contract: Missing Son",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '29',
+    desc: ""
+},{
+    id: 257, 
+    name: "Contract: Skellige's Most Wanted",
+    location: 'Skellige',
+    type: 'Contract',
+    level: '29',
+    desc: ""
+},{
+    id: 258, 
+    name: "Freya Be Praised!",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '4',
+    desc: ""
+},{
+    id: 259, 
+    name: "Not Only Eagles Dare",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '10',
+    desc: ""
+},{
+    id: 260, 
+    name: "X Marks the Spot",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '12',
+    desc: ""
+},{
+    id: 261, 
+    name: "Family Fortune",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: ""
+},{
+    id: 262, 
+    name: "Ironsides' Treasure",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: "Head to the hidden treasure marker southeast of Grotto (and far north of Faroe) to find a skeleton and a ruined boat."
+},{
+    id: 263, 
+    name: "Nilfgaardian Treasure",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: ""
+},{
+    id: 264, 
+    name: "Pearls of the Coast",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: ""
+},{
+    id: 265, 
+    name: "Precious Haul",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: ""
+},{
+    id: 266, 
+    name: "Shortcut",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '13',
+    desc: ""
+},{
+    id: 267, 
+    name: "Inheritance",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '14',
+    desc: ""
+},{
+    id: 268, 
+    name: "Ruins, Hidden Treasure, You Know...",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '18',
+    desc: ""
+},{
+    id: 269, 
+    name: "Scavenger Hunt: Bear School Gear",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '20',
+    desc: "The easiest way to get one of the markers is buy one of Ibrahim Savi's maps from Kaer Trolde's armorer."
+},{
+    id: 270, 
+    name: "Scavenger Hunt: Bear School Gear/Part 1",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '25',
+    desc: "The easiest way to get all the markings on the map is to buy Ibrahim Savi's first map from the armorer at Kaer Trolde, which will add all the areas to look for these diagrams."
+},{
+    id: 271, 
+    name: "Scavenger Hunt: Bear School Gear/Part 2",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '25',
+    desc: "The easiest way to get all the markings on the map is to buy Ibrahim Savi's second map from the armorer at Kaer Trolde, which will add all the areas to look for these diagrams."
+},
+{
+    id: 272, 
+    name: "Scavenger Hunt: Griffin School Gear/Part 3",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '26',
+    desc: "While you can find the diagrams by just exploring, an easy way to get all the locations marked is to buy Edwin Greloff's third map from the armorer in Hierarch Square, which will then reveal them all."
+},{
+    id: 273, 
+    name: "Scavenger Hunt: Wolf School Gear/Part 3",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '29',
+    desc: "The easiest way to get these marked on the map is to buy the damp, moldy notes from Kaer Trolde's armorer."
+},{
+    id: 274, 
+    name: "Hidden in the Depths",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '31',
+    desc: ""
+},{
+    id: 275, 
+    name: "Scavenger Hunt: Cat School Gear/Part 4",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '34',
+    desc: "The easiest way to get all the markers on the map is to buy Adalbert Kermith's fourth map from Lindenvale's blacksmith."
+},{
+    id: 276, 
+    name: "Scavenger Hunt: Griffin School Gear/Part 4",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '34',
+    desc: "While you can find the diagrams by just exploring, an easy way to get all the locations marked is to buy Edwin Greloff's fourth map from Éibhear Hattori, which will then reveal them all."
+},{
+    id: 277, 
+    name: "Scavenger Hunt: Wolf School Gear/Part 6",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '34',
+    desc: "The easiest way to get these marked on the map is to buy the notes on parchment from Kaer Trolde's armorer."
+},{
+    id: 278, 
+    name: "Unlucky's Treasure",
+    location: 'Skellige',
+    type: 'Treasure Hunt',
+    level: '48',
+    desc: "Go to Snidhall Isle north of the Ancient Crypt. Find the pathway on the east side of the island and make your way up the hills. It will lead you to an archgriffin's nest with a hidden treasure marker right in the middle of it."
 },];
 
 const kaermorhen = [
