@@ -1923,7 +1923,7 @@ const skellige =[{
     desc: ""
 },{
     id: 250, 
-    name: "Contract: Strange Beast",
+    name: "Contract: The Phantom of Eldberg",
     location: 'Skellige',
     type: 'Contract',
     level: '17',
@@ -2303,7 +2303,7 @@ const endgame = [
     {
         id: 301, 
         name: "Bald Mountain",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '30',
         desc: "After Blood on the Battlefield"
@@ -2311,7 +2311,7 @@ const endgame = [
     {
         id: 302, 
         name: "Final Preparations",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '1',
         desc: "After Bald Mountain"
@@ -2319,14 +2319,14 @@ const endgame = [
     {
         id: 303, 
         name: "Blindingly Obvious",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Bald Mountain"
     },{
         id: 304, 
         name: "The Great Escape",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Bald Mountain"
@@ -2334,14 +2334,14 @@ const endgame = [
     {
         id: 305, 
         name: "Payback",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Bald Mountain"
     },{
         id: 306, 
         name: "Through Time and Space",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '26',
         desc: "After Bald Mountain"
@@ -2349,7 +2349,7 @@ const endgame = [
     {
         id: 307, 
         name: "Battle Preparations",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Final Preparations"
@@ -2357,7 +2357,7 @@ const endgame = [
     {
         id: 308, 
         name: "The Sunstone",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Final Preparations"
@@ -2365,7 +2365,7 @@ const endgame = [
     {
         id: 309, 
         name: "Veni Vidi Vigo",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Final Preparations"
@@ -2373,7 +2373,7 @@ const endgame = [
     {
         id: 310, 
         name: "Child of the Elder Blood",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '31',
         desc: "After Final Preparations"
@@ -2381,7 +2381,7 @@ const endgame = [
     {
         id: 311, 
         name: "Skjall's Grave",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '28',
         desc: "After Child of the Elder Blood"
@@ -2389,7 +2389,7 @@ const endgame = [
     {
         id: 312, 
         name: "On Thin Ice",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '30',
         desc: "After Battle Preparations"
@@ -2397,21 +2397,21 @@ const endgame = [
     {
         id: 313, 
         name: "Tedd Deireadh, The Final Age",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '30',
         desc: "After On Thin Ice"
     },{
         id: 314, 
         name: "Something Ends, Something Begins",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Main Quest',
         level: '30',
         desc: "After Tedd Deireadh, The Final Age"
     },{
         id: 177, 
         name: "Reason of State",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Secondary Quest',
         level: '30',
         desc: "After Blindingly Obvious"
@@ -2419,7 +2419,7 @@ const endgame = [
     {
         id: 4, 
         name: 'Faithful Friend',
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Secondary Quest',
         level: '30',
         desc: 'This quest is only accessible during the Empress ending and it must be completed before Something Ends, Something Begins.'
@@ -2427,7 +2427,7 @@ const endgame = [
     {
         id: 176, 
         name: "It Takes Three to Tango",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Secondary Quest',
         level: '28',
         desc: "After Final Preparations"
@@ -2435,15 +2435,198 @@ const endgame = [
     {
         id: 174, 
         name: "A Final Kindness",
-        location: 'EndGame',
+        location: 'Endgame',
         type: 'Secondary Quest',
         level: '26',
         desc: "If Geralt allowed Keira to leave to bargain with Radovid during For the Advancement of Learning, or does not attempt to finish all of Keira's quests, then when Geralt meets with Triss after killing Imlerith"
     }
 ];
 
+const dlcOne = [
+    {
+        id: 315, 
+        name: "Evil's Soft First Touches",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '32',
+        desc: "While visiting the notice board by the Seven Cats Inn you will see someone hanging a new contract on it. After a short conversation you can pick it up and read it"
+    },
+    {
+        id: 316, 
+        name: "Dead Man's Party",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '33',
+        desc: "After Evil's Soft First Touches"
+    },
+    {
+        id: 317, 
+        name: "Open Sesame!",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '34',
+        desc: "After Evil's Soft First Touches"
+    },{
+        id: 318, 
+        name: "Open Sesame: Witcher Seasonings",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '34',
+        desc: "After Open Sesame!"
+    },{
+        id: 319, 
+        name: "Open Sesame: Breaking and Entering",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '34',
+        desc: "After Open Sesame!"
+    },{
+        id: 320, 
+        name: "Open Sesame: The Safecracker",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '34',
+        desc: "After Open Sesame!"
+    },{
+        id: 321, 
+        name: "Scenes From a Marriage",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '35',
+        desc: "After Open Sesame! and Dead Man's Party"
+    },
+    {
+        id: 322, 
+        name: "Whatsoever a Man Soweth...",
+        location: 'Hearts of Stone',
+        type: 'Main Quest',
+        level: '36',
+        desc: "After Scenes From a Marriage"
+    },
+    {
+        id: 323, 
+        name: "Enchanting: Quality Has Its Price",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '32',
+        desc: "After Enchanting: Start-up Costs"
+    },{
+        id: 324, 
+        name: "Enchanting: Start-up Costs",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '32',
+        desc: "The quest is usually started by finding a notice on Seven Cats Inn's notice board long before you go anywhere near the Runewright. Go visit him at the Upper Mill and learn more about his craft."
+    },{
+        id: 325, 
+        name: "Races: Swift as the Western Winds",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '32',
+        desc: "This is a simple horse race that you can complete at any time. Go speak to the Ofieri Salesman and mention what a fine horse he has."
+    },{
+        id: 326, 
+        name: "The Taxman Cometh",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '32',
+        desc: "As you pass through Oxenfurt's markets, Walthemor Mitty will stop Geralt to question him about his sudden income discrepancy, which has no doubt raised suspicions."
+    },{
+        id: 327, 
+        name: "Without a Trace",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '32',
+        desc: "Pick up the contract off of Brunwich's notice board"
+    },{
+        id: 328, 
+        name: "A Midnight Clear",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '323',
+        desc: "After Dead Man's Party"
+    },{
+        id: 329, 
+        name: "Rose on a Red Field",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '33',
+        desc: "After Evil's Soft First Touches"
+    },{
+        id: 330, 
+        name: "Avid Collector",
+        location: 'Hearts of Stone',
+        type: 'Secondary Quest',
+        level: '34',
+        desc: "After Open Sesame!"
+    },
+    {
+        id: 331, 
+        name: "A Dark Legacy",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '0',
+        desc: "Before this quest can be started, you must obtain Count Romilly's figurine during the quest Open Sesame!"
+    },{
+        id: 332, 
+        name: "A Surprise Inheritance",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '38',
+        desc: ""
+    },{
+        id: 333, 
+        name: "From Ofier's Distant Shores",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '33',
+        desc: "To start this quest you need to either talk to the Ofieri merchant, Dulla kh'Amanni at Upper Mill and access his inventory or find one of the untranslated Ofieri diagrams."
+    },{
+        id: 334, 
+        name: "Tinker, Hunter, Soldier, Spy",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '33',
+        desc: ""
+    },
+    {
+        id: 335, 
+        name: "The Cursed Chapel",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '36',
+        desc: ""
+    },{
+        id: 336, 
+        name: "The Royal Air Force",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '36',
+        desc: ""
+    },{
+        id: 337, 
+        name: "The Sword, Famine and Perfidy",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '36',
+        desc: ""
+    },{
+        id: 338, 
+        name: "The Drakenborg Redemption",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '38',
+        desc: ""
+    },{
+        id: 339, 
+        name: "The Secret Life of Count Romilly",
+        location: 'Hearts of Stone',
+        type: 'Treasure Hunt',
+        level: '38',
+        desc: ""
+    },]
 
-const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame];
+const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame, ...dlcOne];
 
 
 export default quests;

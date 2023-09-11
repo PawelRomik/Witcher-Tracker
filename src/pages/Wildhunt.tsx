@@ -62,17 +62,15 @@ function Wildhunt() {
 				img = require('../assets/witcher3/map/' + i + '.png');
 				return (
 					<div className='map' onClick={() => changeMap(0)}>
-						<div
-							className='mapOn'
-							style={{ backgroundImage: `url(` + img + `)` }}
-						>
+						<div className='mapcontainer'>
+							<img src={img} alt='map' className='mapOn'></img>
 							<button onClick={() => changeMap(0)}>X</button>
 						</div>
 					</div>
 				);
 			} catch (error) {
 				return (
-					<div className='map' onClick={() => changeMap(0)}>
+					<div className='mapText' onClick={() => changeMap(0)}>
 						<div>
 							<button onClick={() => changeMap(0)}>X</button>
 							<p>

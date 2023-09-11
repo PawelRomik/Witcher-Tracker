@@ -1,4 +1,5 @@
-.map {
+.map,
+.mapText {
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.8);
 	width: 100vw;
@@ -8,31 +9,50 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.map div {
+.mapText div {
 	width: 800px;
-	height: 300px;
+	height: 500px;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	text-align: center;
 
 	background-color: rgb(28, 28, 28);
-	border: 5px solid black;
+
 	box-shadow: 0 0 1px 3px goldenrod;
 	background-repeat: no-repeat;
 	transition: 0.2s;
 	background-size: cover;
 }
 
-.map div.mapOn {
-	width: 800px;
-	height: 700px;
+.mapOn {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+	max-height: 40vw;
+	max-width: 40vw;
 }
 
-.map button {
+.mapcontainer {
+	width: 40vw;
+	height: 40vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border: 5px solid black;
+	box-shadow: 0 0 1px 3px goldenrod;
+}
+
+.map button,
+.mapText button {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -48,6 +68,7 @@
 	background-color: rgb(33, 33, 33);
 	transition: 0.2s;
 	cursor: pointer;
+	position: absolute;
 }
 
 .map button:hover {
