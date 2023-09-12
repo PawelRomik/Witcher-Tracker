@@ -2626,7 +2626,544 @@ const dlcOne = [
         desc: ""
     },]
 
-const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame, ...dlcOne];
+    const dlcTwo = [{
+        id: 340, 
+        name: "Envoys, Wineboys",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '34',
+        desc: "After A Poet Under Pressure"
+    },{
+        id: 341, 
+        name: "The Beast of Toussaint",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '35',
+        desc: "After Envoys, Wineboys"
+    },
+    {
+        id: 342, 
+        name: "Blood Run",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '36',
+        desc: "After The Beast of Toussaint"
+    },{
+        id: 343, 
+        name: "La Cage au Fou",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '39',
+        desc: "After Blood Run"
+    },{
+        id: 344, 
+        name: "Where Children Toil, Toys Waste Away",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '42',
+        desc: "After La Cage au Fou"
+    },{
+        id: 345, 
+        name: "Wine is Sacred",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '42',
+        desc: "After Where Children Toil, Toys Waste Away"
+    },{
+        id: 346, 
+        name: "The Man from Cintra",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '43',
+        desc: "After Wine is Sacred"
+    },{
+        id: 347, 
+        name: "Capture the Castle",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '47',
+        desc: "After The Man from Cintra"
+    },{
+        id: 348, 
+        name: "The Night of Long Fangs",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '47',
+        desc: "After Capture the Castle"
+    },{
+        id: 349, 
+        name: "Beyond Hill and Dale...",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '47',
+        desc: "After The Night of Long Fangs"
+    },{
+        id: 350, 
+        name: "Blood Simple",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '47',
+        desc: "After The Night of Long Fangs"
+    },{
+        id: 351, 
+        name: "What Lies Unseen",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '47',
+        desc: "After Blood Simple"
+    },{
+        id: 352, 
+        name: "Tesham Mutna",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '49',
+        desc: "After Beyond Hill and Dale... or What Lies Unseen"
+    },{
+        id: 353, 
+        name: "Pomp and Strange Circumstance",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '49',
+        desc: "After Tesham Mutna (Good Ending)"
+    },{
+        id: 354, 
+        name: "Burlap is the New Stripe",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '49',
+        desc: "After Tesham Mutna (Bad Ending)"
+    },{
+        id: 355, 
+        name: "Be It Ever So Humble...",
+        location: 'Blood and Wine',
+        type: 'Main Quest',
+        level: '49',
+        desc: "The final main quest"
+    },
+    {
+        id: 356, 
+        name: "Amidst the Mill's Grist",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "After La Cage au Fou"
+    },{
+        id: 357, 
+        name: "Gwent: Never Fear, Skellige's Here",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "The quest can be started in 2 ways, either speaking to Martin Monnier as part of Gwent: To Everything - Turn, Turn, Tournament! who will give the base deck or by winning one of the cards from the Skellige Gwent deck from a random player."
+    },{
+        id: 358, 
+        name: "Knight for Hire",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "To start the quest, you may pick up the notice from any notice board in Toussaint."
+    },{
+        id: 359, 
+        name: "No Place Like Home",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "When you first arrive at Corvo Bianco, your majordomo, Barnabas-Basil Foulty, introduces himself and will show you around. After taking a walk through the estate, you'll likely have noticed the place could use some renovations. Ask about them with Barnabas and he'll be happy to help, provided you have the money to do so."
+    },{
+        id: 360, 
+        name: "The Perks of Being a Jailbird",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '0',
+        desc: "After Burlap is the New Stripe"
+    },
+    {
+        id: 361, 
+        name: "The Warble of a Smitten Knight",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '35',
+        desc: "The quest is started after defeating the Shaelmaar during The Beast of Toussaint."
+    },{
+        id: 362, 
+        name: "Turn and Face the Strange",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '35',
+        desc: "Right after Blood Run ends you will very likely run into a boy who will deliver a letter for Geralt."
+    },{
+        id: 363, 
+        name: "Fists of Fury: Touissaint",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '36',
+        desc: "To start the quest, you may pick up the notice from Beauclair's notice board"
+    },{
+        id: 364, 
+        name: "Goodness, Gracious, Great Balls of Granite!",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '36',
+        desc: "Pick this up either as on the Gran'place's notice board or by walking around Lolivier Square to hear a man, Rolande, crying out that the exhibition is closed."
+    },{
+        id: 365, 
+        name: "Paperchase",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '36',
+        desc: "To start the quest, you should find a vineyard owner near Trentin's workshop (to the west of Lazare Lafargue's workshop) who calls out to Geralt."
+    },{
+        id: 366, 
+        name: "Till Death Do You Part",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '36',
+        desc: "The quest may be started by finding its notice on The Gran'place's notice board, speaking directly to Charles Lanzano at The Clever Clogs Tavern, or hearing noises at the Temple Cemetery at night."
+    },{
+        id: 367, 
+        name: "Father Knows Worst",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '37',
+        desc: "The easiest way to start this quest is to find the contract notice on The Gran'place's notice board, but you may also stumble upon the Albertus Grotto, north of Rioux-Cannes Outpost."
+    },{
+        id: 368, 
+        name: "Vintner's Contract: Rivecalme Storehouse",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '37',
+        desc: "The quest is located at the Rivecalme Storehouse just west of Dulcinea Windmill. "
+    },{
+        id: 369, 
+        name: "Wine Wars: Belgaard",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '37',
+        desc: "The quest can be started by picking up a notice from pretty much any notice board in Toussaint, or simply meeting the people at its starting point."
+    },{
+        id: 370, 
+        name: "Wine Wars: Coronata",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '37',
+        desc: "This quest is given if Geralt agrees to help out Liam right after the first part of Wine Wars: Belgaard, where he sees Liam and his competitor, Matilda, arguing over who gets Belgaard."
+    },{
+        id: 371, 
+        name: "Wine Wars: Vermentino",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '37',
+        desc: "This quest is given if Geralt agrees to help out Matilda right after the first part of Wine Wars: Belgaard, where he sees Matilda and her competitor, Liam, arguing over who gets Belgaard."
+    },{
+        id: 372, 
+        name: "Gwent: To Everything - Turn, Turn, Tournament!",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '38',
+        desc: "The quest can be started by finding the posting on any notice board in Toussaint, a pamphlet that can be found in a few places, or directly speaking to the tournament host at The Pheasantry's balcony."
+    },{
+        id: 373, 
+        name: "A Knight's Tales",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "You can start the quest by either finding Jacob or his note on the notice board at Castel Ravello."
+    },{
+        id: 374, 
+        name: "Big Feet to Fill",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "Started automatically as Contract: Bovine Blues completes. Talk to the foreman to receive directions."
+    },{
+        id: 375, 
+        name: "Extreme Cosplay",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "Heading east, away from Francollarts, you'll pass the Doren Alma Estate where a man, Gaston, is trying to tend to a wounded man on the main road."
+    },{
+        id: 376, 
+        name: "Master Master Master Master!",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "Talk to Lazare Lafargue, he will immediately propose to Geralt the quest to find diagrams for Grandmaster Armor sets."
+    },{
+        id: 377, 
+        name: "Raging Wolf",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "After Fists of Fury: Toussaint"
+    },{
+        id: 378, 
+        name: "The Words of the Prophets Are Written on Sarcophagi",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "This quest can either be picked up while doing Scavenger Hunt: Grandmaster Manticore Gear, or by exploring the abandoned temple near Prophet Lebioda Statue. On entering the hidden area of the temple, the Great Beggar's Ghost will attack. Take care of it, then loot the nearby skeleton for the Bones of the Great Beggar to start the quest."
+    },{
+        id: 379, 
+        name: "Vintner's Contract: Chuchote Cave",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "Upon arriving at Chuchote Cave, talk to the wine merchant who will be calling out to you."
+    },{
+        id: 380, 
+        name: "Vintner's Contract: Dun Tynne Hillside",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "The quest is located north from Dun Tynne Castle and west from Dun Tynne Crossroads."
+    },{
+        id: 381, 
+        name: "Wine Wars: Consorting",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '40',
+        desc: "It's only triggered if the player completed Wine Wars: The Deus in the Machina before completing either Wine Wars: Coronata or Wine Wars: Vermentino."
+    },{
+        id: 382, 
+        name: "The Hunger Game",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '42',
+        desc: "The quest begins automatically, 48 hours after bringing Marlene to safety at Corvo Bianco."
+    },{
+        id: 383, 
+        name: "Wine Wars: The Deus in the Machina",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '42',
+        desc: "After Wine Wars: Vermentino and Wine Wars: Coronata"
+    },{
+        id: 384, 
+        name: "A Portrait of the Witcher as an Old Man",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '43',
+        desc: "Head to the market square south of The Gran'place signpost. In the south part of the market you'll see several paintings and easels set up with a painter making a remark on Geralt's appearance."
+    },{
+        id: 385, 
+        name: "Of Sheers and a Witcher I Sing",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '43',
+        desc: "South of the Nilfgaardian Embassy you will find Adrien de Rouleau a.k.a. Le Papillon."
+    },{
+        id: 386, 
+        name: "There Can Be Only One",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '43',
+        desc: "This quest may be started by picking up the notice from the Gran'place's notice board or by listening to a conversation between Bors and Percival at the Tourney Grounds."
+    },{
+        id: 387, 
+        name: "Vintner's Contract: Cleaning Those Hard-to-Reach Places",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '43',
+        desc: "The quest is located north of Gélenser Farm, talk to the Wine Merchant."
+    },{
+        id: 388, 
+        name: "Vintner's Contract: Duchaton Crest",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '43',
+        desc: "The contract location is southeast of Rioux-Cannes Outpost, talk to the Wine Merchant and he will ask Geralt to clear the nearby cave of monsters."
+    },{
+        id: 389, 
+        name: "Mutual of Beauclair's Wild Kingdom",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '46',
+        desc: "Head towards the campsite mentioned in the contract, at the Trading Post northeast of Coronata Vineyard."
+    },{
+        id: 390, 
+        name: "Duck, Duck, Goosed!",
+        location: 'Blood and Wine',
+        type: 'Secondary Quest',
+        level: '47',
+        desc: "It can be obtained in the Land of a Thousand Fables from the notice board near the girl who sells flint."
+    },{
+        id: 391, 
+        name: "Big Game Hunter",
+        location: 'Blood and Wine',
+        type: 'Contract',
+        level: '37',
+        desc: "This quest is usually started by picking up Wanted: The White Wolf at pretty much any notice board in Toussaint, but you can also directly find the employer Count Beledal near Chuchote Cave."
+    },{
+        id: 392, 
+        name: "Contract: Bovine Blues",
+        location: 'Blood and Wine',
+        type: 'Contract',
+        level: '38',
+        desc: "This quest can be acquired by reading a notice on Flovive's notice board or Ardaiso Quarry's notice board"
+    },{
+        id: 393, 
+        name: "Contract: The Tufo Monster",
+        location: 'Blood and Wine',
+        type: 'Contract',
+        level: '48',
+        desc: "To start the quest, you may pick up a notice from Flovive's notice board, or directly find Jean-Christophe de Bourbeau at Tufo."
+    },{
+        id: 394, 
+        name: "Equine Phantoms",
+        location: 'Blood and Wine',
+        type: 'Contract',
+        level: '44',
+        desc: "It's given by the hermit Pinastri at her hermitage, northeast of the Dun Tynne Crossroads."
+    },{
+        id: 395, 
+        name: "Feet as Cold as Ice",
+        location: 'Blood and Wine',
+        type: 'Contract',
+        level: '45',
+        desc: "You can start the quest by either talking to Jacquette, who you can find near the Nilfgaardian Embassy"
+    },{
+        id: 396, 
+        name: "Coin Doesn't Stink",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '37',
+        desc: "This is conveniently started at one of the 5 locations for Wine Wars: Coronata, but if you need directions, head to Pittapatte River Crossing, the hidden treasure marker north-northwest of Dun Tynne Crossroads."
+    },{
+        id: 397, 
+        name: "Don't Take Candy from a Stranger",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '37',
+        desc: "You'll likely come across this while doing Wine Wars: Vermentino. At the hidden treasure marker southwest of Prophet Lebioda Statue, you'll find several rotfiends around a dead body."
+    },{
+        id: 398, 
+        name: "The Black Widow",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '37',
+        desc: "Head to the hidden treasure spot far west of Flovive, along the Sansretour River bank, to find 3 drowners eating on a corpse."
+    },{
+        id: 399, 
+        name: "The Inconstant Gardener",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '37',
+        desc: "This quest takes place at Abandoned Coopers' Workshop, southwest of Tesham Mutna Ruins signpost. You will find a group of bandits there, so dispose of them and then look for a sack glowing in red - take the gardener's key and read the note from it to start the quest."
+    },{
+        id: 400, 
+        name: "The Last Exploits of Selina's Gang",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '37',
+        desc: "The quest is likely to be started during Till Death Do You Part after killing some grave robbers in the Temple Cemetary catacombs. Reading the the letter next to them will point you to the intended starting location - a hidden treasure near Lebioda's Gate, where you have to kill a few drowners."
+    },{
+        id: 401, 
+        name: "Applied Escapology",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "You will find a corpse on the west part of Crane Isle, where the Toussaint Prison stands. Loot it to find the escape artist's journal and read it."
+    },{
+        id: 402, 
+        name: "Around the World in... Eight Days",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "You can pick up this quest from a chest, which can be found east of Coronata Vineyard, guarded by some bandits."
+    },{
+        id: 403, 
+        name: "Scavenger Hunt: Grandmaster Feline Gear",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "After Master Master Master Master!"
+    },{
+        id: 404, 
+        name: "Scavenger Hunt: Grandmaster Griffin Gear",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "After Master Master Master Master!"
+    },{
+        id: 405, 
+        name: "Scavenger Hunt: Grandmaster Manticore Gear",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "After Master Master Master Master!"
+    },{
+        id: 406, 
+        name: "Scavenger Hunt: Grandmaster Ursine Gear",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "After Master Master Master Master!"
+    },{
+        id: 407, 
+        name: "Scavenger Hunt: Grandmaster Wolven Gear",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "After Master Master Master Master!"
+    },{
+        id: 408, 
+        name: "Waiting for Goe and Doh",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '40',
+        desc: "To start the quest you must reach the hidden treasure located east from the Toussaint Prison and northeast from Termes Palace Ruins."
+    },{
+        id: 409, 
+        name: "Spoontaneous Profits!",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '42',
+        desc: "Head inside Trastamara Estate Ruins and search around until you find the Spoon key, and read the note attached to it."
+    },{
+        id: 410, 
+        name: "But Other Than That, How Did You Enjoy the Play?",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '43',
+        desc: "Head to Seidhe Llygad Amphitheater, south of the Palace Gardens and across the lake."
+    },{
+        id: 411, 
+        name: "What Was This About Again?",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '43',
+        desc: "At the hidden treasure marker located north of Plegmund's Bridge, there is a sunken ship with a couple of drowners swimming around it."
+    },{
+        id: 412, 
+        name: "The Curse of Carnarvon",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '46',
+        desc: "You can start this quest by looting a journal and a key and from a corpse at the hidden treasure location north of the Castel Ravello Vineyard signpost."
+    },{
+        id: 413, 
+        name: "The Suffering of Young Francois",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '47',
+        desc: "To start the quest you need to find the hidden treasure located just south from Fort Astre Ruins, where a Wraith will appear."
+    },{
+        id: 414, 
+        name: "The Toussaint Prison Experiment",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '47',
+        desc: "Upon arriving in the ruins of the prison, a vampire stands still in the middle of the area. After disposing of her search the nearby corpse to find an old key and clerk's diary,"
+    },{
+        id: 415, 
+        name: "Filibert Always Pays His Debts",
+        location: 'Blood and Wine',
+        type: 'Treasure Hunt',
+        level: '48',
+        desc: "This quest takes place at the the Casteldaccia Abandoned Estate, just a bit east of the signpost."
+    },]
+
+const quests = [...whiteorchard,...velen,...novigrad,...skellige,...kaermorhen,...endgame, ...dlcOne, ...dlcTwo];
 
 
 export default quests;
