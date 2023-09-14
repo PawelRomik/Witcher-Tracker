@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import '../style/style.scss';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import quests from '../data/witcher3';
+import questsWitcher3 from '../data/witcher3';
+import questsWitcher1 from '../data/witcher1';
+import questsWitcher2 from '../data/witcher2';
 
 interface Quest {
 	id: number;
@@ -12,19 +14,29 @@ interface Quest {
 	level: string;
 }
 
-function Wildhunt() {
+function QuestTracker(props: any) {
+	console.log(props.game);
 	const [completedQuests, setCompletedQuests] = useState<number[]>([]);
 	const [mapImg, changeMap] = useState<number>(0);
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
+	const witcherVersion = props.game;
+	const webId =
+		witcherVersion === 'witcher3' ? 0 : witcherVersion === 'witcher2' ? 1 : 2;
+	const quests =
+		witcherVersion === 'witcher3'
+			? questsWitcher3
+			: witcherVersion === 'witcher2'
+			? questsWitcher2
+			: questsWitcher1;
 
 	useEffect(() => {
-		const CompletedQuestsTemp = localStorage.getItem('witcher3Quests');
+		const CompletedQuestsTemp = localStorage.getItem(`${witcherVersion}Quests`);
 		if (CompletedQuestsTemp) {
 			setCompletedQuests(JSON.parse(CompletedQuestsTemp));
 		}
 	}, []);
 
-	quests.forEach((quest) => {
+	quests.forEach((quest: any) => {
 		if (!locationGroup[quest.location]) {
 			locationGroup[quest.location] = {};
 		}
@@ -40,7 +52,10 @@ function Wildhunt() {
 				? prevCompletedQuests.filter((previd) => previd !== id)
 				: [...prevCompletedQuests, id];
 
-			localStorage.setItem('witcher3Quests', JSON.stringify(updatedQuests));
+			localStorage.setItem(
+				`${witcherVersion}Quests`,
+				JSON.stringify(updatedQuests)
+			);
 			return updatedQuests;
 		});
 	};
@@ -59,7 +74,7 @@ function Wildhunt() {
 			const i = mapImg - 1;
 			let img;
 			try {
-				img = require('../assets/witcher3/map/' + i + '.png');
+				img = require(`../assets/${witcherVersion}/map/` + i + '.png');
 				return (
 					<div className='map' onClick={() => changeMap(0)}>
 						<div className='mapcontainer'>
@@ -75,7 +90,7 @@ function Wildhunt() {
 							<button onClick={() => changeMap(0)}>X</button>
 							<p>
 								{
-									quests.filter((obj) => {
+									quests.filter((obj: any) => {
 										return obj.id === i;
 									})[0].desc
 								}
@@ -178,14 +193,14 @@ function Wildhunt() {
 
 	return (
 		<>
-			<Header counter={0} onButtonClick={''} />
+			<Header counter={webId} onButtonClick={''} />
 			<main className='quests'>
 				{showMap()}
 				{sortLocation()}
 			</main>
-			<Footer counter={0} />
+			<Footer counter={webId} />
 		</>
 	);
 }
 
-export default Wildhunt;
+export default QuestTracker;
