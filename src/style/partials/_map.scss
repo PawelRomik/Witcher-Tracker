@@ -33,6 +33,14 @@
 	padding: 10px;
 }
 
+.witcher1quest .mapText div {
+	box-shadow: 0 0 1px 3px #da0000;
+}
+
+.witcher2quest .mapText div {
+	box-shadow: 0 0 1px 3px #0095da;
+}
+
 .mapOn {
 	width: 100%;
 	height: 100%;
@@ -50,6 +58,14 @@
 	position: relative;
 	border: 5px solid black;
 	box-shadow: 0 0 1px 3px goldenrod;
+}
+
+.witcher1quest .mapcontainer {
+	box-shadow: 0 0 1px 3px #da0000;
+}
+
+.witcher2quest .mapcontainer {
+	box-shadow: 0 0 1px 3px #0095da;
 }
 
 .map button,
@@ -72,12 +88,48 @@
 	position: absolute;
 }
 
-.map button:hover {
+.witcher1quest .map button,
+.witcher1quest .mapText button {
+	border: 3px solid #da0000;
+	color: #da0000;
+}
+
+.witcher2quest .map button,
+.witcher2quest .mapText button {
+	border: 3px solid #0095da;
+	color: #0095da;
+}
+
+.witcher1quest .map button:hover,
+.witcher1quest .mapText button:hover {
+	color: rgb(255, 77, 77);
+	border: 3px solid rgb(255, 77, 77);
+}
+
+.witcher2quest .map button:hover,
+.witcher2quest .mapText button:hover {
+	color: #34bfff;
+	border: 3px solid #34bfff;
+}
+
+.map button:hover,
+.mapText button:hover {
 	background-color: rgb(52, 52, 52);
 	color: yellow;
 	border: 3px solid yellow;
 }
 
-.map div:has(button:hover) {
+.witcher1quest .map div:has(button:hover),
+.witcher1quest .mapText div:has(button:hover) {
+	box-shadow: 0 0 1px 3px rgb(255, 77, 77);
+}
+
+.witcher2quest .map div:has(button:hover),
+.witcher2quest .mapText div:has(button:hover) {
+	box-shadow: 0 0 1px 3px #34bfff;
+}
+
+.map div:has(button:hover),
+.mapText div:has(button:hover) {
 	box-shadow: 0 0 1px 3px yellow;
 }

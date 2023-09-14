@@ -26,6 +26,14 @@
 	font-weight: bold;
 }
 
+.witcher1quest .quest.completed button {
+	color: #da0000;
+}
+
+.witcher2quest .quest.completed button {
+	color: #0095da;
+}
+
 .locationwitcher hr {
 	border: 3px dashed rgb(77, 77, 77);
 	margin: 10px;
@@ -80,6 +88,14 @@
 	cursor: pointer;
 }
 
+.witcher1quest .locationwitcher[open] > summary {
+	color: #da0000;
+}
+
+.witcher2quest .locationwitcher[open] > summary {
+	color: #0095da;
+}
+
 .locationwitcher[open] summary {
 	color: goldenrod;
 }
@@ -103,6 +119,13 @@
 	font-size: 16px;
 }
 
+.witcher1quest .questinfo span:nth-of-type(2) {
+	color: #da0000;
+}
+.witcher2quest .questinfo span:nth-of-type(2) {
+	color: #0095da;
+}
+
 .locationwitcher[open] > *:not(summary) {
 	animation: details-show 350ms ease-in-out;
 }
@@ -118,6 +141,14 @@
 }
 
 .locationwitcher details[open] summary {
+	color: white;
+}
+
+.witcher1quest .locationwitcher details[open] summary {
+	color: white;
+}
+
+.witcher2quest .locationwitcher details[open] summary {
 	color: white;
 }
 
@@ -151,6 +182,14 @@
 .questEvent span {
 	color: goldenrod;
 	margin-right: 3%;
+}
+
+.witcher1quest .questEvent span {
+	color: #da0000;
+}
+
+.witcher2quest .questEvent span {
+	color: #0095da;
 }
 
 .questEvent {

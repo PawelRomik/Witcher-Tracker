@@ -194,7 +194,7 @@ function QuestTracker(props: any) {
 	return (
 		<>
 			<Header counter={webId} onButtonClick={''} />
-			<main className='quests'>
+			<main className={`${witcherVersion}quest quests`}>
 				{showMap()}
 				{sortLocation()}
 			</main>
