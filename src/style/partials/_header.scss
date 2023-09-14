@@ -50,6 +50,24 @@ header img:hover {
 	filter: drop-shadow(0 0 15px #da7400);
 }
 
+.witcher2_header h1 {
+	color: #0095da;
+}
+
+.witcher2_header img:hover {
+	-webkit-filter: drop-shadow(0 0 15px #0095da);
+	filter: drop-shadow(0 0 15px #0095da);
+}
+
+.witcher1_header h1 {
+	color: #da0000;
+}
+
+.witcher1_header img:hover {
+	-webkit-filter: drop-shadow(0 0 15px #da0000);
+	filter: drop-shadow(0 0 15px #da0000);
+}
+
 @keyframes witcherSpin {
 	0%,
 	100% {

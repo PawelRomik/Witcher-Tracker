@@ -90,9 +90,6 @@ function Menu() {
 				changeContent(
 					<>
 						<div className='witcher2_choose'>
-							<p>
-								Quests <i className='fa-solid fa-crown'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/kingslayer');
@@ -103,9 +100,6 @@ function Menu() {
 						</div>
 
 						<div className='witcher2_choose'>
-							<p>
-								Passives <i className='fa-solid fa-eye'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/passives');
@@ -122,9 +116,6 @@ function Menu() {
 				changeContent(
 					<>
 						<div className='witcher_choose'>
-							<p>
-								Quests <i className='fa-solid fa-crown'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/salamander');
@@ -135,9 +126,6 @@ function Menu() {
 						</div>
 
 						<div className='witcher_choose'>
-							<p>
-								Romance Cards <i className='fa-solid fa-heart'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/romance');
@@ -148,9 +136,6 @@ function Menu() {
 						</div>
 
 						<div className='witcher_choose'>
-							<p>
-								Dice <i className='fa-solid fa-dice'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/dice');
@@ -161,9 +146,6 @@ function Menu() {
 						</div>
 
 						<div className='witcher_choose'>
-							<p>
-								Drink Competition <i className='fa-solid fa-wine-bottle'></i>
-							</p>
 							<button
 								onClick={() => {
 									navigate('/drink');
