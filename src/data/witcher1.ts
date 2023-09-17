@@ -118,6 +118,20 @@ const actOne = [
     level: '0',
     desc: "Vesna remains at the inn until after Geralt speaks to her. Then she will leave every evening at 20:00, and can be found in danger as early as about 20:15. If Geralt leaves the inn and heads north at this time, he will see a group of men threatening to rape her. If he approaches, he must decide whether or not to help her."
 },{
+    id: 94, 
+    name: "Berengar's Secret (Part 1)",
+    location: 'Act 1',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Throughout Chapters I and II, the witcher follows the trail left by Berengar but the latter manages to stay one step ahead, or maybe he is just dead?"
+},{
+    id: 95, 
+    name: "Fistfight (Act 1)",
+    location: 'Act 1',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Beat Fat Fred"
+},{
     id: 16, 
     name: "Wanted (Part 1)",
     location: 'Act 1',
@@ -422,55 +436,316 @@ const actTwo = [{
     desc: "It may take place either in Chapters II or III when Geralt finds the Letter for Knight Eric and the Lionhead Spider crypt key on a dead knight in the Sewers under the Temple Quarter."
 },{
     id: 59, 
+    name: "A Game of Dice (Act 2)",
+    location: 'Act 2',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Players: Zoltan, Elven convict, Carmen, Vaska, Gardener, Thaler and Munro Bruys"
+},{
+    id: 92, 
+    name: "Fistfight (Part 2)",
+    location: 'Act 2',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Beat Butter Bean"
+},{
+    id: 93, 
+    name: "Berengar's Secret (Part 2)",
+    location: 'Act 2',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Throughout Chapters I and II, the witcher follows the trail left by Berengar but the latter manages to stay one step ahead, or maybe he is just dead?"
+},{
+    id: 60, 
     name: "Bloodthirsty Vegetation",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Bloodthirsty Vegetation is one of nine optional trophy quests. This quest is obtained killing the coccacidium, a vicious archespore that Vincent Meis is offering a reward for."
 },{
-    id: 60, 
+    id: 61, 
     name: "The Beast of the Sewers",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "The Beast of the Sewers is one of The Witcher's ten trophy quests - the third available, and the only one which is automatically initiated in the course of the main plot."
 },{
-    id: 61, 
+    id: 62, 
     name: "The Alghoul Contract",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Notice Board"
 },{
-    id: 62, 
+    id: 63, 
     name: "The Echinops Contract",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Notice Board"
 },{
-    id: 63, 
+    id: 64, 
     name: "The Dogcatcher of Vizima",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Notice Board"
 },{
-    id: 64, 
+    id: 65, 
     name: "The Drowned Dead Contract",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Notice Board"
 },{
-    id: 65, 
+    id: 66, 
     name: "The Wolf Contract",
     location: 'Act 2',
     type: 'Monster Hunt',
     level: '0',
     desc: "Notice Board"
 },]
-const quests = [...prologue, ...actOne, ...actTwo];
+
+const actThree = [{
+    id: 67, 
+    name: "A Posh Reception",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "A Posh Reception is a quest which is given to Geralt by Triss at the beginning of Chapter III."
+},{
+    id: 68, 
+    name: "Diplomacy and Hunting",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Vaska gives Geralt this quest upon the completion of Reaping time, when the witcher finishes that quest and returns to her with the report."
+},{
+    id: 69, 
+    name: "Reaping Time",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Reaping Time is a quest given to Geralt by Vaska in Chapter III when the witcher goes back to the village, having previously helped rid them of drowners."
+},{
+    id: 70, 
+    name: "The Source",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Source is a quest which is given to Geralt by Triss Merigold at the beginning of Chapter III. She asks him to place three sensors at each of three locations in the Temple and Trade Quarters to locate the source of some strange magical anomalies."
+},{
+    id: 71, 
+    name: "Lock and Key",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Lock and Key is a quest which is given to Geralt by Declan Leuvaarden after the banquet at the beginning of Chapter III. It furthers the witcher's investigation of Salamandra."
+},{
+    id: 72, 
+    name: "Gold Rush",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "In Chapter III, shortly after leaving The New Narakort following the banquet (if certain conditions have been fulfilled - see below), the witcher is accosted by a young boy who tells him that the bank is being robbed and that Velerad has sent for him. So begins Gold Rush."
+},{
+    id: 73, 
+    name: "Following the Thread",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Following the Thread is a quest given to Geralt by Jethro in the Dungeon. Talking to Leuvaarden is not necessary for this quest, but it will provide more background information."
+},{
+    id: 74, 
+    name: "The Viziman Connection",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Viziman Connection is a quest in Chapter III given by Jethro to Geralt after the latter has cleared out the Salamandra hideout in the sewers."
+},{
+    id: 75, 
+    name: "Witcher's Secrets (Part 3)",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "At the end of Chapter III, he finally uncovers the location of the Salamandra base and infiltrates it, and finishes off the Professor. One down, one to go. Along the way, he discovers that Princess Adda is also involved with Salamandra. Just as he emerges from the base, things come to a head and our hero is very nearly executed when he is 'greeted' by the princess and a squadron of arbalesters. It is only by the good graces of the sorceress, Triss Merigold that he is teleported away and manages to avoid a nasty fate."
+},{
+    id: 76, 
+    name: "The Unforgiven",
+    location: 'Act 3',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Unforgiven is the last quest in Chapter III. It is given to Geralt by Declan Leuvaarden and sees our hero finally locate the Salamandra's base of operations."
+},{
+    id: 77, 
+    name: "All the King's Men",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "All the King's Men is a quest in Chapter III which begins when Triss explains to Geralt that the district is under martial law. She gives the witcher the pass he will require simply to be allowed to walk the streets of the Trade Quarter. This quest spans all of Chapter III."
+},{
+    id: 78, 
+    name: "Beauty and the Beast",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Beauty and the Beast is an optional quest in Chapter III, given to Geralt by Carmen during her brief relocation to the swamp landing."
+},{
+    id: 79, 
+    name: "Blue Eyes",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Blue Eyes is an optional quest in Chapter III in which a knight asks Geralt to find his missing sister, Blue Eyes."
+},{
+    id: 80, 
+    name: "Dandelion's Lute",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Dandelion's Lute is a secondary quest in Chapter III of The Witcher. Dandelion has left his lute in the bedroom of a young 'music student' of his and needs Geralt's help to retrieve it."
+},{
+    id: 81,
+    name: "Echoes of Yesterday",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Geralt receives Echoes of Yesterday from Yaevinn at the beginning of Chapter III, if the witcher happens to be in the Druids' grove in the swamp. The elf asks Geralt to locate his men who appear to have gone missing in the sewers of the Trade Quarter."
+},{
+    id: 82,
+    name: "Medic in Distress",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Medic in Distress is an optional quest in Chapter III which Geralt can undertake when he comes upon a distressed nurse outside St. Lebioda's Hospital."
+},{
+    id: 83,
+    name: "Six Feet Under",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Siegfried gives Geralt this quest at the beginning of Chapter III. People have been disappearing in the cemetery and the Order would like to get to the bottom of it. They do not have the manpower to spare, so a witcher's help is required."
+},{
+    id: 84,
+    name: "The Ring",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "The Ring is an optional quest in Chapter III which Geralt can undertake when he meets a desperate merchant on the dike who is trying to retrieve a family heirloom from the corpse of his uncle in the swamp forest."
+},{
+    id: 85,
+    name: "Won't Hurt a Bit (Part 1)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "He buys Alp fangs, barghest skull, Beast fangs, Boxer's tooth, Cemetaur jaw, Devourer teeth and Fleder fangs"
+},{
+    id: 86,
+    name: "Identity (Part 1)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Chapter III is where the witcher really begins to delve into his own motivations and choices, with the help of Triss Merigold, an old friend. It is the sorceress who suggests to Geralt that he should take his amnesia in hand and work to solidify his identity. She refuses to tell him what he used to be like, insisting rather that he create his own persona, or recreate it as the case may be. Since our hero is not one to whine, he sucks it up and begins his journey of self-discovery, checking in periodically with Triss."
+},{
+    id: 87,
+    name: "A Game of Dice (Part 3)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Players: Vaska, Gardener, Munro Bruys, Roderick de Wett, Velerad, Hierophant and Koster"
+},{
+    id: 88,
+    name: "Wanted (Part 3)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "The quest begins when Geralt finds an arrest warrant for the Professor on the Notice board outside the Outskirts Inn and ends with the Professor's death in the bowels of the Salamandra base. There is no guesswork in this quest; all advancements are a result of other (often previously-unrelated) quests."
+},{
+    id: 89,
+    name: "A Lost Lamb (Part 2)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "It is not until Chapter III and the Reaping Time quest that our hero finally locates the missing child."
+},{
+    id: 90,
+    name: "Fistfight (Part 3)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "beat Andrew Gablodda."
+},{
+    id: 91,
+    name: "Berengar's Secret (Part 3)",
+    location: 'Act 3',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Geralt is convinced that Berengar is dead, but in Chapter III, he gets news that Berengar is indeed still alive, but where is he? His path has clearly led him to Salamandra, but what then?"
+},{
+    id: 96,
+    name: "White Fang",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "You will find the wolf roaming the swamp. It only spawns after dusk and before dawn, and will not appear when you are doing the quest to save the brickmakers."
+},{
+    id: 97,
+    name: "The Predatory Wyvern",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "While you are fulfilling the The Wyvern Contract, and most likely wading through the swamp near Wyvern Island, you will encounter a royal wyvern that is larger than the others and it has its own name, Moa. Kill it, and take the trophy (the head) from its dead body. Take your trophy to the Royal huntsman in the Trade Quarter for a nice reward."
+},{
+    id: 98,
+    name: "The Archespore Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 99,
+    name: "The Cockatrice Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 100,
+    name: "The Fleder Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 101,
+    name: "The Ghoul Contract 2",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 102,
+    name: "The Graveir Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 103,
+    name: "The Kikimore Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 104,
+    name: "The Wyvern Contract",
+    location: 'Act 3',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},]
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree];
 
 
 export default quests;
