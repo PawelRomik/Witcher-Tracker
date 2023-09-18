@@ -745,7 +745,177 @@ const actThree = [{
     level: '0',
     desc: "Notice board"
 },]
-const quests = [...prologue, ...actOne, ...actTwo, ...actThree];
+
+const actFour = [{
+    id: 105,
+    name: "Alvin",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Alvin, the quest, begins in Chapter IV when Geralt finds the boy a third time (the first being in the Outskirts, then later at St. Lebioda's Hospital). It is during this quest that Alvin and the witcher get to know each other."
+},{
+    id: 106,
+    name: "Armor",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Armor quest, which begins in Chapter IV, but also takes up most of Chapter V, is initiated when Geralt finds Berengar at the Lakeside crypt. The errant witcher tells our hero about a legendary suit of armor that once belonged to an equally legendary witcher named 'Raven'. Rumor has it, he was buried with his armor."
+},{
+    id: 107,
+    name: "Witchers' Secrets (Part 4)",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Geralt then finds himself in Murky Waters for Chapter IV, which while Salamandra-free, does provide some more information about the organization. This comes about when our hero finally finds the long-lost witcher, Berengar. It seems Berengar 'spent some time' with Salamandra, more than once in fact. The rest of the time Geralt spends in Murky Waters is really unrelated to the primary quest. But, as far away from Vizima as Murky Water seems, the unrest reaches the sleepy village and by the end of the Chapter, Geralt is on his way back to the city with one more headache to contend with: outright fighting in the streets between the Scoia'tael and the Order keeping him from his friends who might provide more information."
+},{
+    id: 108,
+    name: "Ripples",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Ripples is the framing quest for Chapter IV of The Witcher. It sees Geralt resolve a conflict between the human inhabitants of the village of Murky Waters and the vodyanoi who live in the Underwater City in the nearby lake."
+},{
+    id: 109,
+    name: "The Heat of the Day",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Heat of the Day is a quest which spans most of Chapter IV, in which Geralt initially meets a young bride to be, Alina, but then later must help her spirit find peace when she is tragically killed."
+},{
+    id: 110,
+    name: "Free Elves",
+    location: 'Act 4',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Free Elves is the final quest in Chapter IV. It is triggered after Geralt receives Aerondight from the Lady of the Lake and sets up his first encounter with White Rayla."
+},{
+    id: 111,
+    name: "A Game of Dice (Act 4)",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Players: Tobias Hoffman, Julian, The Hermit, Dandelion, Chireadan and Gambling Ghost"
+},{
+    id: 112,
+    name: "Won't Hurt a Bit (Part 2)",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "He buys Alp fangs, barghest skull, Beast fangs, Boxer's tooth, Cemetaur jaw, Devourer teeth and Fleder fangs"
+},{
+    id: 113,
+    name: "Fistfight (Act 4)",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Beat The Rock"
+},{
+    id: 114,
+    name: "Berengar's Secret (Act 4)",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "It is only in Chapter IV that Geralt finally finds Berengar and they get a chance to speak face to face, but it is not easy. It seems that the errant witcher cares not one whit how much trouble our hero has gone through to find him. He prefers to remain 'lost' as it were and has no desire to talk about his motivation or actions. It takes a lot of prodding in the form of repeated visits before Geralt gets all the information out of him."
+},{
+    id: 114,
+    name: "Identity (Part 4)",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Identity is technically a secondary quest, but it is central to the plot of The Witcher. Through this quest, Geralt develops his sense of self-identity."
+},{
+    id: 115,
+    name: "Daily Bread",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Daily Bread is a secondary quest given by Toruviel, leader of the Elves of Murky Waters, in Chapter IV."
+},{
+    id: 116,
+    name: "Hunting the Wild Hunt",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Hunting the Wild Hunt is an optional quest in Chapter IV which Geralt can receive from the Hermit in the Fields."
+},{
+    id: 117,
+    name: "Old Habits Die Hard",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Old Habits Die Hard is an optional quest in Chapter IV given to Geralt by a Naiad he happens to meet on the lakeshore."
+},{
+    id: 118,
+    name: "Small Problems",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Small Problems is an optional quest in Chapter IV which Geralt receives if he strikes up a conversation with the local mason, Harn, who is trying to repair the bridge to the Fields."
+},{
+    id: 119,
+    name: "Temptation",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "As he is taking in the sights of the village of Murky Waters, Geralt is suddenly overcome by the powerful aroma of something good cooking and it seems to be emanating from the Blacksmith's house. It seems that the blacksmith recently killed a pig and his wife is now making a lovely stew with the meat. The witcher enters the house."
+},{
+    id: 120,
+    name: "The Paths of Destiny",
+    location: 'Act 4',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "When Geralt first arrives at the Lakeside, one of the first people he meets is the friendly vodyan priest who tends the altar to the Lady of the Lake. Speaking with the cleric, the witcher learns that another witcher has preceded him to the sleepy village. This other witcher had agreed to resolve the conflict between the villagers and the vodyanoi, but so far had produced no results. The friendly priest also mentions that the other witcher is most likely in the nearby crypt."
+},{
+    id: 121,
+    name: "The Ancient Cemetaur",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "When Geralt first strolls into the village of Murky Waters, one of the first people he meets is Tobias Hoffman, the mayor and chief. When asked if he needs the services of a witcher, Hoffman intimates that there are two monsters plaguing the area: Ureus, the ancient cemetaur and a decidedly unfriendly vodyan priest."
+},{
+    id: 122,
+    name: "The Vodyan Priest",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Tobias Hoffman, the mayor of Murky Waters, tells you about the vodyan priest by the name of Teyu in the Fields. This quest is not to kill the friendly Vodyan priest, but another Dagon worshipping priest, Teyu, currently marauding in the fields near a small lake. He is usually accompanied by two warriors."
+},{
+    id: 123,
+    name: "The Alp Contract",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice Board"
+},{
+    id: 124,
+    name: "The Basilisk Contract",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice Board"
+},{
+    id: 125,
+    name: "The Devourer Contract",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice Board"
+},{
+    id: 126,
+    name: "The Giant Centipede Contract",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice Board"
+},{
+    id: 127,
+    name: "The Royal Wyvern Contract",
+    location: 'Act 4',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice Board"
+},]
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour];
 
 
 export default quests;
