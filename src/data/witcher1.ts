@@ -915,7 +915,142 @@ const actFour = [{
     level: '0',
     desc: "Notice Board"
 },]
-const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour];
+
+const actFive = [{
+    id: 128,
+    name: "Witchers' Secrets (Act 5)",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "In Chapter V, after much trudging back and forth between Old Vizima and the swamp cemetery, the witcher gets the break he needs when the king himself provides some valuable information about the location of Salamandra's leaders: the Old Manor. It is at the Old Manor that Geralt has his final encounter with Azar Javed, but as it turns out, he was not the mastermind. After killing the mage, our hero finally discovers who is really behind the madness: the Grand Master of the Order of the Flaming Rose, Jacques de Aldersberg."
+},{
+    id: 129,
+    name: "Her Highness the Striga",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Her Highness the Striga is a quest in Chapter V given to Geralt by Foltest himself."
+},{
+    id: 130,
+    name: "Hope Burns Bright",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Hope Burns Bright is a quest in Chapter V which Geralt undertakes if he chooses the Scoia'tael path."
+},{
+    id: 131,
+    name: "Sweet Revenge",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Sweet Revenge is a quest given to Geralt by either Dandelion in Chapter IV right before the departure to Old Vizima, or King Foltest in Chapter V. It is the culmination of Geralt's quest to eradicate Salamandra and takes the witcher to the Old Manor."
+},{
+    id: 132,
+    name: "The Flame that Cleanses",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Flame that Cleanses is a quest in Chapter V which Geralt can undertake if he chooses the Order path."
+},{
+    id: 133,
+    name: "Under a Fiery Sky",
+    location: 'Act 5',
+    type: 'Main Quest',
+    level: '0',
+    desc: "Under a Fiery Sky is a quest in Chapter V which Geralt undertakes if he chooses the Witcher / neutral path."
+},{
+    id: 134,
+    name: "Berengar's Secret (Act 5)",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "If Geralt forgives him, Berengar gives him what information he has on Salamandra and takes his leave but returns to help the witcher during his final battle with Azar Javed at the Old Manor. If they duel, obviously our hero is the victor and must get the information from Berengar's remains. In addition to the notes he would have gotten if they parted peacefully, he also finds Berengar's medallion, a powerful amulet which is useful against Azar Javed in the final battle between the witcher and the mage."
+},{
+    id: 135,
+    name: "Fistfight (Act 5)",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Beat Zdenek"
+},{
+    id: 136,
+    name: "A Gnomish Device",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "A Gnomish Device is a quest in Chapter V which Geralt undertakes if he chooses the Scoia'tael path. In this quest, he must find the bifunctional fiber and alloy recirculator in order to recreate Raven's armour."
+},{
+    id: 137,
+    name: "A Magic Formula",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "A Magic Formula is a quest in The Witcher, received in Chapter V if Geralt chooses the Witcher / neutral path, sends the witcher to the southernmost reaches of the swamp cemetery, to a refugee cave where he must retrieve a magical formula from an ancient crypt to help Kalkstein re-create Raven's armor."
+},{
+    id: 138,
+    name: "Mud and Velvet",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Mud and Velvet is an optional quest in Chapter V, which is offered to Geralt by Antoinette, a noblewoman who happens to be at the Royal castle when the witcher arrives."
+},{
+    id: 139,
+    name: "Saint Gregory's Litany",
+    location: 'Act 5',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Saint Gregory's Litany is a quest in Chapter V which Geralt undertakes if he chooses the Order path. In this quest, he must find Saint Gregory's litany in order to recreate Raven's armor."
+},{
+    id: 140,
+    name: "Bloodwing",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Bloodwing is one of nine optional trophy quests. It is obtained by killing a larger garkain, Vesper, which the Royal huntsman mentions. Only one trophy quest, The Beast of the Sewers, is not optional, making a total of ten."
+},{
+    id: 141,
+    name: "The Vampiress of the Swamp",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "The Vampiress of the Swamp is one of ten trophy quests in The Witcher. The Royal Huntsman calls for the head of a bruxa named Lilly."
+},{
+    id: 142,
+    name: "The Wraith Contract",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 143,
+    name: "The Garkain Contract",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 144,
+    name: "The Cemetaur Contract",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 145,
+    name: "The Bruxa Contract",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},{
+    id: 146,
+    name: "The Bloedzuiger Contract",
+    location: 'Act 5',
+    type: 'Monster Hunt',
+    level: '0',
+    desc: "Notice board"
+},]
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour, ...actFive];
 
 
 export default quests;
