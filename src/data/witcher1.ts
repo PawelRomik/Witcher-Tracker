@@ -1050,7 +1050,30 @@ const actFive = [{
     level: '0',
     desc: "Notice board"
 },]
-const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour, ...actFive];
+
+const epilogue = [{
+    id: 147,
+    name: "Witchers' Secrets (Epilogue)",
+    location: 'Epilogue',
+    type: 'Main Quest',
+    level: '0',
+    desc: "There is a final showdown between the witcher and the Grand Master which takes place in the Ice Plains, a dreamscape of Aldersberg's making. Only after the witcher has killed the madman does he finally find the stolen witchers' secrets. End of quest."
+},{
+    id: 148,
+    name: "The Ashes of Vizima",
+    location: 'Epilogue',
+    type: 'Main Quest',
+    level: '0',
+    desc: "The Ashes of Vizima is a quest which is automatically received upon completion of Chapter V; it launches the Epilogue. At this point, Geralt's Paths essentially converge; only the absence or presence of certain key players, whose lives have been impacted by Geralt's choices, varies."
+},{
+    id: 149,
+    name: "Frozen Reflections",
+    location: 'Epilogue',
+    type: 'Secondary Quest',
+    level: '0',
+    desc: "Frozen Reflections is considered a secondary quest, but it is unavoidable narratively. It is triggered by Geralt's entrance in the Cloister of the Order of the Flaming Rose. It is received automatically as Geralt enters the Cloister to speak with the Grandmaster."
+},]
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour, ...actFive, ...epilogue];
 
 
 export default quests;

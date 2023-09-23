@@ -59,23 +59,23 @@
 	margin-right: 1%;
 }
 
-.quests details:nth-of-type(8) > summary,
-.quests details:nth-of-type(8) span:nth-of-type(2),
-.quests details:nth-of-type(8) .questEvent span {
+.witcher3quest details:nth-of-type(8) > summary,
+.witcher3quest details:nth-of-type(8) span:nth-of-type(2),
+.witcher3quest details:nth-of-type(8) .questEvent span {
 	color: rgb(170, 81, 81);
 }
 
-.quests details:nth-of-type(7) > summary,
-.quests details:nth-of-type(7) span:nth-of-type(2),
-.quests details:nth-of-type(7) .questEvent span {
+.witcher3quest details:nth-of-type(7) > summary,
+.witcher3quest details:nth-of-type(7) span:nth-of-type(2),
+.witcher3quest details:nth-of-type(7) .questEvent span {
 	color: rgb(81, 133, 170);
 }
 
-.quests details:nth-of-type(8)[open] > summary {
+.witcher3quest details:nth-of-type(8)[open] > summary {
 	color: rgb(248, 146, 146);
 }
 
-.quests details:nth-of-type(7)[open] > summary {
+.witcher3quest details:nth-of-type(7)[open] > summary {
 	color: rgb(120, 196, 251);
 }
 .locationwitcher summary {
