@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import '../style/style.scss';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import questsWitcher3 from '../data/witcher3';
-import questsWitcher1 from '../data/witcher1';
-import questsWitcher2 from '../data/witcher2';
+import React, { useEffect, useState } from "react";
+import "../style/style.scss";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import questsWitcher3 from "../data/witcher3";
+import questsWitcher1 from "../data/witcher1";
+import questsWitcher2 from "../data/witcher2";
 
 interface Quest {
 	id: number;
@@ -20,14 +20,8 @@ function QuestTracker(props: any) {
 	const [mapImg, changeMap] = useState<number>(0);
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
 	const witcherVersion = props.game;
-	const webId =
-		witcherVersion === 'witcher3' ? 0 : witcherVersion === 'witcher2' ? 1 : 2;
-	const quests =
-		witcherVersion === 'witcher3'
-			? questsWitcher3
-			: witcherVersion === 'witcher2'
-			? questsWitcher2
-			: questsWitcher1;
+	const webId = witcherVersion === "witcher3" ? 0 : witcherVersion === "witcher2" ? 1 : 2;
+	const quests = witcherVersion === "witcher3" ? questsWitcher3 : witcherVersion === "witcher2" ? questsWitcher2 : questsWitcher1;
 
 	useEffect(() => {
 		const CompletedQuestsTemp = localStorage.getItem(`${witcherVersion}Quests`);
@@ -48,25 +42,18 @@ function QuestTracker(props: any) {
 
 	const completeQuest = (id: number) => {
 		setCompletedQuests((prevCompletedQuests) => {
-			const updatedQuests = prevCompletedQuests.includes(id)
-				? prevCompletedQuests.filter((previd) => previd !== id)
-				: [...prevCompletedQuests, id];
+			const updatedQuests = prevCompletedQuests.includes(id) ? prevCompletedQuests.filter((previd) => previd !== id) : [...prevCompletedQuests, id];
 
-			localStorage.setItem(
-				`${witcherVersion}Quests`,
-				JSON.stringify(updatedQuests)
-			);
+			localStorage.setItem(`${witcherVersion}Quests`, JSON.stringify(updatedQuests));
 			return updatedQuests;
 		});
 	};
 
 	const changeCompletion = (type: Quest[]) => {
 		const totalQuests = type.length;
-		const completedQuestsCount = type.filter((quest) =>
-			completedQuests.includes(quest.id)
-		).length;
+		const completedQuestsCount = type.filter((quest) => completedQuests.includes(quest.id)).length;
 
-		return `${completedQuestsCount + '/' + totalQuests}`;
+		return `${completedQuestsCount + "/" + totalQuests}`;
 	};
 
 	const showMap = () => {
@@ -74,7 +61,7 @@ function QuestTracker(props: any) {
 			const i = mapImg - 1;
 			let img;
 			try {
-				img = require(`../assets/${witcherVersion}/map/` + i + '.png');
+				img = require(`../assets/${witcherVersion}/map/${i}.png`);
 				return (
 					<div className='map' onClick={() => changeMap(0)}>
 						<div className='mapcontainer'>
@@ -104,14 +91,10 @@ function QuestTracker(props: any) {
 
 	const sortType = (location: { [type: string]: Quest[] }) => {
 		return Object.entries(location).map(([type, typeQuest]) => {
-			const completed = typeQuest.filter((quest) =>
-				completedQuests.includes(quest.id)
-			);
-			const incompleted = typeQuest.filter(
-				(quest) => !completedQuests.includes(quest.id)
-			);
+			const completed = typeQuest.filter((quest) => completedQuests.includes(quest.id));
+			const incompleted = typeQuest.filter((quest) => !completedQuests.includes(quest.id));
 
-			const isMainQuest = type === 'Main Quest';
+			const isMainQuest = type === "Main Quest";
 
 			return (
 				<details key={type}>
@@ -119,60 +102,44 @@ function QuestTracker(props: any) {
 						{type} - {changeCompletion(typeQuest)}
 					</summary>
 					{incompleted
-						.sort((a, b) =>
-							isMainQuest ? 0 : Number(a.level) - Number(b.level)
-						)
+						.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
 						.map((item) => (
-							<div
-								className={`quest ${
-									completedQuests.includes(item.id) ? 'completed' : ''
-								}`}
-								key={item.id}
-								onClick={() => changeMap(item.id + 1)}
-							>
+							<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
 								<div className='questinfo'>
 									<span>{item.name}</span>
 									<span>{item.type}</span>
 								</div>
 								<div className='questEvent'>
-									<span>{item.level !== '0' ? item.level + ' lvl' : '-'}</span>
+									<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
 									<button
 										onClick={(e) => {
 											e.stopPropagation();
 											completeQuest(item.id);
 										}}
 									>
-										{completedQuests.includes(item.id) ? 'X' : ''}
+										{completedQuests.includes(item.id) ? "X" : ""}
 									</button>
 								</div>
 							</div>
 						))}
-					{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ''}
+					{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ""}
 					{completed
-						.sort((a, b) =>
-							isMainQuest ? 0 : Number(a.level) - Number(b.level)
-						)
+						.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
 						.map((item) => (
-							<div
-								className={`quest ${
-									completedQuests.includes(item.id) ? 'completed' : ''
-								}`}
-								key={item.id}
-								onClick={() => changeMap(item.id + 1)}
-							>
+							<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
 								<div className='questinfo'>
 									<span>{item.name}</span>
 									<span>{item.type}</span>
 								</div>
 								<div className='questEvent'>
-									<span>{item.level !== '0' ? item.level + ' lvl' : '-'}</span>
+									<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
 									<button
 										onClick={(e) => {
 											e.stopPropagation();
 											completeQuest(item.id);
 										}}
 									>
-										{completedQuests.includes(item.id) ? 'X' : ''}
+										{completedQuests.includes(item.id) ? "X" : ""}
 									</button>
 								</div>
 							</div>
@@ -193,7 +160,7 @@ function QuestTracker(props: any) {
 
 	return (
 		<>
-			<Header counter={webId} onButtonClick={''} />
+			<Header counter={webId} onButtonClick={""} />
 			<main className={`${witcherVersion}quest quests`}>
 				{showMap()}
 				{sortLocation()}
