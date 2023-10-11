@@ -1,17 +1,15 @@
 footer {
 	background-color: #292826;
 	width: 100%;
-	height: 10vh;
 	text-align: center;
+	height: 10vh;
 	color: white;
-	animation: start2 1s linear;
-	transition: 0.1s 0.3s;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	overflow: hidden;
 	border-top: 4px solid rgb(31, 31, 31);
-	background-image: url('/assets/ui/bgc.png');
+	background-image: url("/assets/ui/bgc.png");
 }
 
 footer a {
@@ -32,7 +30,7 @@ footer a span {
 	right: 40px;
 	font-size: 28px;
 	transition: 0.3s;
-	font-family: 'Staatliches', cursive;
+	font-family: "Staatliches", cursive;
 }
 
 footer a {
@@ -40,18 +38,4 @@ footer a {
 	font-size: 32px;
 	margin-bottom: 25px;
 	margin-right: 25px;
-}
-
-@keyframes start2 {
-	0% {
-		height: 90vh;
-	}
-
-	50% {
-		height: 90vh;
-	}
-
-	100% {
-		height: 10vh;
-	}
 }

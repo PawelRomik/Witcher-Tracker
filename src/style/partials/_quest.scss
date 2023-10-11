@@ -26,7 +26,8 @@
 	font-weight: bold;
 }
 
-.witcher1quest .quest.completed button {
+.witcher1quest .quest.completed button,
+.witcher1Romancequest .quest.completed button {
 	color: #da0000;
 }
 
@@ -88,7 +89,8 @@
 	cursor: pointer;
 }
 
-.witcher1quest .locationwitcher[open] > summary {
+.witcher1quest .locationwitcher[open] > summary,
+.witcher1Romancequest .locationwitcher[open] > summary {
 	color: #da0000;
 }
 
@@ -119,7 +121,8 @@
 	font-size: 16px;
 }
 
-.witcher1quest .questinfo span:nth-of-type(2) {
+.witcher1quest .questinfo span:nth-of-type(2),
+.witcher1Romancequest .questinfo span:nth-of-type(2) {
 	color: #da0000;
 }
 .witcher2quest .questinfo span:nth-of-type(2) {
@@ -184,7 +187,8 @@
 	margin-right: 3%;
 }
 
-.witcher1quest .questEvent span {
+.witcher1quest .questEvent span,
+.witcher1Romancequest .questEvent span {
 	color: #da0000;
 }
 

@@ -33,7 +33,8 @@
 	padding: 10px;
 }
 
-.witcher1quest .mapText div {
+.witcher1quest .mapText div,
+.witcher1Romancequest .mapText div {
 	box-shadow: 0 0 1px 3px #da0000;
 }
 
@@ -60,7 +61,8 @@
 	box-shadow: 0 0 1px 3px goldenrod;
 }
 
-.witcher1quest .mapcontainer {
+.witcher1quest .mapcontainer,
+.witcher1Romancequest .mapcontainer {
 	box-shadow: 0 0 1px 3px #da0000;
 }
 
@@ -89,7 +91,9 @@
 }
 
 .witcher1quest .map button,
-.witcher1quest .mapText button {
+.witcher1quest .mapText button,
+.witcher1Romancequest .map button,
+.witcher1Romancequest .mapText button {
 	border: 3px solid #da0000;
 	color: #da0000;
 }
@@ -132,4 +136,13 @@
 .map div:has(button:hover),
 .mapText div:has(button:hover) {
 	box-shadow: 0 0 1px 3px yellow;
+}
+
+.witcher1Romancequest .map .mapcontainer {
+	box-shadow: none;
+}
+
+.witcher1Romancequest .map .mapcontainer button {
+	border-color: black;
+	color: white;
 }

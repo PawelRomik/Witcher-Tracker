@@ -7,29 +7,28 @@ header {
 	align-items: center;
 	text-align: center;
 	color: goldenrod;
-	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000,
-		3px 3px 0 #000;
+	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
 	transition: 0.1s 0.3s;
 	background-color: #292826;
 	border-bottom: 6px solid rgb(31, 31, 31);
-	background-image: url('/assets/ui/bgc.png');
+	background-image: url("/assets/ui/bgc.png");
 }
 
 header * {
-	font-family: 'Staatliches', cursive;
+	font-family: "Staatliches", cursive;
 }
 header button {
 	border: none;
 	background-color: transparent;
 }
 
-header button[data-spin='1'] {
+header button[data-spin="1"] {
 	animation: witcherSpin 0.4s linear;
 	pointer-events: none;
 }
 
 header img {
-	width: 22vw;
+	width: 20vw;
 	padding: 0 5vw;
 	user-select: none;
 	transition: 0.6s;
@@ -37,10 +36,10 @@ header img {
 }
 
 header h1 {
-	font-size: 50px;
+	font-size: 3rem;
 }
 header h3 {
-	font-size: 25px;
+	font-size: 1.5rem;
 	color: white;
 }
 

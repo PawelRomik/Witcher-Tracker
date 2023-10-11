@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import questsWitcher3 from "../data/witcher3";
 import questsWitcher1 from "../data/witcher1";
 import questsWitcher2 from "../data/witcher2";
+import romanceWitcher from "../data/witcher1Romance";
 
 interface Quest {
 	id: number;
@@ -21,14 +22,28 @@ function QuestTracker(props: any) {
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
 	const witcherVersion = props.game;
 	const webId = witcherVersion === "witcher3" ? 0 : witcherVersion === "witcher2" ? 1 : 2;
-	const quests = witcherVersion === "witcher3" ? questsWitcher3 : witcherVersion === "witcher2" ? questsWitcher2 : questsWitcher1;
+	let quests: any;
+	switch (witcherVersion) {
+		case "witcher3":
+			quests = questsWitcher3;
+			break;
+		case "witcher2":
+			quests = questsWitcher2;
+			break;
+		case "witcher1":
+			quests = questsWitcher1;
+			break;
+		case "witcher1Romance":
+			quests = romanceWitcher;
+			break;
+	}
 
 	useEffect(() => {
 		const CompletedQuestsTemp = localStorage.getItem(`${witcherVersion}Quests`);
 		if (CompletedQuestsTemp) {
 			setCompletedQuests(JSON.parse(CompletedQuestsTemp));
 		}
-	}, []);
+	}, [witcherVersion]);
 
 	quests.forEach((quest: any) => {
 		if (!locationGroup[quest.location]) {
@@ -61,7 +76,7 @@ function QuestTracker(props: any) {
 			const i = mapImg - 1;
 			let img;
 			try {
-				img = require(`../assets/${witcherVersion}/map/${i}.png`);
+				witcherVersion === "witcher1Romance" ? (img = require(`../assets/witcher1/romance/${i}.webp`)) : (img = require(`../assets/${witcherVersion}/map/${i}.png`));
 				return (
 					<div className='map' onClick={() => changeMap(0)}>
 						<div className='mapcontainer'>
@@ -96,56 +111,106 @@ function QuestTracker(props: any) {
 
 			const isMainQuest = type === "Main Quest";
 
-			return (
-				<details key={type}>
-					<summary>
-						{type} - {changeCompletion(typeQuest)}
-					</summary>
-					{incompleted
-						.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
-						.map((item) => (
-							<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
-								<div className='questinfo'>
-									<span>{item.name}</span>
-									<span>{item.type}</span>
+			if (witcherVersion === "witcher1Romance") {
+				return (
+					<div key={type}>
+						{incompleted
+							.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
+							.map((item) => (
+								<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
+									<div className='questinfo'>
+										<span>{item.name}</span>
+										<span>{item.type}</span>
+									</div>
+									<div className='questEvent'>
+										<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
+										<button
+											onClick={(e) => {
+												e.stopPropagation();
+												completeQuest(item.id);
+											}}
+										>
+											{completedQuests.includes(item.id) ? "X" : ""}
+										</button>
+									</div>
 								</div>
-								<div className='questEvent'>
-									<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
-									<button
-										onClick={(e) => {
-											e.stopPropagation();
-											completeQuest(item.id);
-										}}
-									>
-										{completedQuests.includes(item.id) ? "X" : ""}
-									</button>
+							))}
+						{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ""}
+						{completed
+							.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
+							.map((item) => (
+								<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
+									<div className='questinfo'>
+										<span>{item.name}</span>
+										<span>{item.type}</span>
+									</div>
+									<div className='questEvent'>
+										<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
+										<button
+											onClick={(e) => {
+												e.stopPropagation();
+												completeQuest(item.id);
+											}}
+										>
+											{completedQuests.includes(item.id) ? "X" : ""}
+										</button>
+									</div>
 								</div>
-							</div>
-						))}
-					{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ""}
-					{completed
-						.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
-						.map((item) => (
-							<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
-								<div className='questinfo'>
-									<span>{item.name}</span>
-									<span>{item.type}</span>
+							))}
+					</div>
+				);
+			} else {
+				return (
+					<details key={type}>
+						<summary>
+							{type} - {changeCompletion(typeQuest)}
+						</summary>
+						{incompleted
+							.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
+							.map((item) => (
+								<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
+									<div className='questinfo'>
+										<span>{item.name}</span>
+										<span>{item.type}</span>
+									</div>
+									<div className='questEvent'>
+										<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
+										<button
+											onClick={(e) => {
+												e.stopPropagation();
+												completeQuest(item.id);
+											}}
+										>
+											{completedQuests.includes(item.id) ? "X" : ""}
+										</button>
+									</div>
 								</div>
-								<div className='questEvent'>
-									<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
-									<button
-										onClick={(e) => {
-											e.stopPropagation();
-											completeQuest(item.id);
-										}}
-									>
-										{completedQuests.includes(item.id) ? "X" : ""}
-									</button>
+							))}
+						{incompleted.length > 0 && completed.length > 0 ? <hr></hr> : ""}
+						{completed
+							.sort((a, b) => (isMainQuest ? 0 : Number(a.level) - Number(b.level)))
+							.map((item) => (
+								<div className={`quest ${completedQuests.includes(item.id) ? "completed" : ""}`} key={item.id} onClick={() => changeMap(item.id + 1)}>
+									<div className='questinfo'>
+										<span>{item.name}</span>
+										<span>{item.type}</span>
+									</div>
+									<div className='questEvent'>
+										<span>{item.level !== "0" ? item.level + " lvl" : "-"}</span>
+										<button
+											onClick={(e) => {
+												e.stopPropagation();
+												completeQuest(item.id);
+											}}
+										>
+											{completedQuests.includes(item.id) ? "X" : ""}
+										</button>
+									</div>
 								</div>
-							</div>
-						))}
-				</details>
-			);
+							))}
+					</details>
+				);
+			}
 		});
 	};
 

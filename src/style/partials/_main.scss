@@ -9,8 +9,8 @@ main {
 	flex-direction: column;
 	color: white;
 	font-size: 22px;
-	animation: start 0.5s 0.5s linear;
-	animation-fill-mode: forwards;
+	min-height: 80vh;
+	height: auto;
 }
 
 main.quests {
@@ -49,7 +49,7 @@ main.menu div.witcher_choose {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	animation: startoptions 0.5s 1s linear;
+	animation: startoptions 0.1s 0.5s linear;
 	animation-fill-mode: forwards;
 }
 
