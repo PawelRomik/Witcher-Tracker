@@ -79,6 +79,81 @@ const actTwo = [
 	},
 ];
 
-const quests = [...prologue, ...actOne, ...actTwo];
+const actThree = [
+	{
+		id: 9,
+		name: "Triss Merigold",
+		location: "Act Three",
+		type: "Send Alvin to her, then chat with her.",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 10,
+		name: "Shani",
+		location: "Act Three",
+		type: "Send Alvin to her, then chat with her.",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 11,
+		name: "Rozalind Pankiera",
+		location: "Act Three",
+		type: "Complete quest 'Dandelion's Lute'",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 12,
+		name: "Noblewoman",
+		location: "Act Three",
+		type: "Stands in the street outside Triss' house near the jester, wants a Kikimore claw. You can also click the option to give her money and then cancel it",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 13,
+		name: "Blue Eyes",
+		location: "Act Three",
+		type: "Complete quest 'Blue Eyes'",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 14,
+		name: "Courtesans",
+		location: "Act Three",
+		type: "500 Oren or a gem or a bottle of perfume",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 15,
+		name: "Princess Adda",
+		location: "Act Three",
+		type: "after a short set of FedEx quests all in the same area at the party",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 16,
+		name: "Queen of the Night",
+		location: "Act Three",
+		type: "Queen of the Night — the climax of the Blue Eyes quest, if you choose one night with the sisters of mercy over killing the Lady of the Night.",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 17,
+		name: "Town Clerk",
+		location: "Act Three",
+		type: "Located at the town hall, upstairs. Tell her that she's a naughty girl, give her a diamond as a gift and she is all yours.",
+		level: "0",
+		desc: "",
+	},
+];
+
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree];
 
 export default quests;
