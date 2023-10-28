@@ -154,6 +154,41 @@ const actThree = [
 	},
 ];
 
-const quests = [...prologue, ...actOne, ...actTwo, ...actThree];
+const actFour = [
+	{
+		id: 18,
+		name: "Celina",
+		location: "Act Four",
+		type: "Give her a ring",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 19,
+		name: "Elf Woman",
+		location: "Act Four",
+		type: "Give her food",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 20,
+		name: "Lady of the Lake",
+		location: "Act Four",
+		type: "After the hermit quest you get an option to tell her you want to go on a mission, tell her it was a jest after you say it.",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 21,
+		name: "Peasant Woman",
+		location: "Act Four",
+		type: "Often hangs out at the inn or can also be found wandering around the village. Give her a sugardoll",
+		level: "0",
+		desc: "",
+	},
+];
+
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour];
 
 export default quests;
