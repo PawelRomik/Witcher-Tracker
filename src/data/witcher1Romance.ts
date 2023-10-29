@@ -189,6 +189,33 @@ const actFour = [
 	},
 ];
 
-const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour];
+const actFive = [
+	{
+		id: 22,
+		name: "Toruviel",
+		location: "Act Five",
+		type: "[Scoia'tael path] Save her and then talk to her",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 23,
+		name: "Rayla",
+		location: "Act Five",
+		type: "[Order path] Follow her and then talk to her",
+		level: "0",
+		desc: "",
+	},
+	{
+		id: 24,
+		name: "Nurses",
+		location: "Act Five",
+		type: "[Neutral path] Return to the hospital after escorting Shani and talk to them",
+		level: "0",
+		desc: "",
+	},
+];
+
+const quests = [...prologue, ...actOne, ...actTwo, ...actThree, ...actFour, ...actFive];
 
 export default quests;
