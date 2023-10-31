@@ -5,7 +5,8 @@ import Footer from "../components/Footer";
 import questsWitcher3 from "../data/witcher3";
 import questsWitcher1 from "../data/witcher1";
 import questsWitcher2 from "../data/witcher2";
-import romanceWitcher from "../data/witcher1Romance";
+import romanceWitcher1 from "../data/witcher1Romance";
+import drinkWitcher1 from "../data/witcher1Drinkgame";
 
 interface Quest {
 	id: number;
@@ -16,27 +17,22 @@ interface Quest {
 }
 
 function QuestTracker(props: any) {
-	console.log(props.game);
-	const [completedQuests, setCompletedQuests] = useState<number[]>([]);
+	const witcherVersions: { [key: string]: any } = {
+		witcher3: [3, 0],
+		witcher2: [2, 1],
+		witcher1: [1, 2],
+		witcher1Romance: [1, 3],
+	};
+
+	const witcherVersion = props.game;
+	const webId = witcherVersions[witcherVersion][0];
+
 	const [mapImg, changeMap] = useState<number>(0);
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
-	const witcherVersion = props.game;
-	const webId = witcherVersion === "witcher3" ? 0 : witcherVersion === "witcher2" ? 1 : 2;
-	let quests: any;
-	switch (witcherVersion) {
-		case "witcher3":
-			quests = questsWitcher3;
-			break;
-		case "witcher2":
-			quests = questsWitcher2;
-			break;
-		case "witcher1":
-			quests = questsWitcher1;
-			break;
-		case "witcher1Romance":
-			quests = romanceWitcher;
-			break;
-	}
+
+	const [completedQuests, setCompletedQuests] = useState<number[]>([]);
+	const questsData = [questsWitcher3, questsWitcher2, questsWitcher1, romanceWitcher1, drinkWitcher1];
+	const quests = questsData[witcherVersions[witcherVersion][1]];
 
 	useEffect(() => {
 		const CompletedQuestsTemp = localStorage.getItem(`${witcherVersion}Quests`);
@@ -76,7 +72,7 @@ function QuestTracker(props: any) {
 			const i = mapImg - 1;
 			let img;
 			try {
-				witcherVersion === "witcher1Romance" ? (img = require(`../assets/witcher1/romance/${i}.webp`)) : (img = require(`../assets/${witcherVersion}/map/${i}.png`));
+				witcherVersion.length > 8 ? (img = require(`../assets/${witcherVersion}/${i}.webp`)) : (img = require(`../assets/${witcherVersion}/map/${i}.png`));
 				return (
 					<div className='map' onClick={() => changeMap(0)}>
 						<div className='mapcontainer'>
@@ -111,7 +107,7 @@ function QuestTracker(props: any) {
 
 			const isMainQuest = type === "Main Quest";
 
-			if (witcherVersion === "witcher1Romance") {
+			if (witcherVersion.length > 8) {
 				return (
 					<div key={type}>
 						{incompleted
