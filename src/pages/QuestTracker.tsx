@@ -4,9 +4,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import questsWitcher3 from "../data/witcher3";
 import questsWitcher1 from "../data/witcher1";
-import questsWitcher2 from "../data/witcher2";
-import romanceWitcher1 from "../data/witcher1Romance";
-import drinkWitcher1 from "../data/witcher1Drinkgame";
 
 interface Quest {
 	id: number;
@@ -19,9 +16,7 @@ interface Quest {
 function QuestTracker(props: any) {
 	const witcherVersions: { [key: string]: any } = {
 		witcher3: [3, 0],
-		witcher2: [2, 1],
-		witcher1: [1, 2],
-		witcher1Romance: [1, 3],
+		witcher1: [1, 1]
 	};
 
 	const witcherVersion = props.game;
@@ -31,7 +26,7 @@ function QuestTracker(props: any) {
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
 
 	const [completedQuests, setCompletedQuests] = useState<number[]>([]);
-	const questsData = [questsWitcher3, questsWitcher2, questsWitcher1, romanceWitcher1, drinkWitcher1];
+	const questsData = [questsWitcher3, questsWitcher1];
 	const quests = questsData[witcherVersions[witcherVersion][1]];
 
 	useEffect(() => {
