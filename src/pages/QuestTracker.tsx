@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../style/style.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -20,7 +20,6 @@ function QuestTracker(props: any) {
 	};
 
 	const witcherVersion = props.game;
-	const webId = witcherVersions[witcherVersion][0];
 
 	const [mapImg, changeMap] = useState<number>(0);
 	const locationGroup: { [location: string]: { [type: string]: Quest[] } } = {};
@@ -216,12 +215,12 @@ function QuestTracker(props: any) {
 
 	return (
 		<>
-			<Header counter={webId} onButtonClick={""} />
+			<Header />
 			<main className={`${witcherVersion}quest quests`}>
 				{showMap()}
 				{sortLocation()}
 			</main>
-			<Footer counter={webId} />
+			<Footer />
 		</>
 	);
 }
