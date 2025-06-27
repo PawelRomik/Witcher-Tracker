@@ -2,7 +2,7 @@
 
 ## Project Overview :tada:
 <h3>Witcher-Tracker</h3> 
-Track The Witcher, The Witcher 2 and The Witcher 3 quests!
+Track The Witcher and The Witcher 3 quests!
 
 ## Tech/framework used :wrench:
 * [React](https://github.com/facebook/react)              
@@ -12,11 +12,7 @@ Track The Witcher, The Witcher 2 and The Witcher 3 quests!
 ## Screenshots :tv:
 
 <p align="center">
-    <img src="https://github.com/LeQu15/Witcher-Tracker/assets/78439105/ecc6d3f7-cec3-49eb-874d-8cd366d0ad20" alt="Witcher 3 Hub"/>
-</p>
-
-<p align="center">
-    <img src="https://github.com/LeQu15/Witcher-Tracker/assets/78439105/c2eb9fa7-7151-4244-99a7-b8550520e594" alt="Witcher 1 Hub"/>
+    <img src="https://github.com/user-attachments/assets/ac7f86ba-d2a0-49ed-9af4-f9cc6d82bab7" alt="Hub"/>
 </p>
 
 <p align="center">
