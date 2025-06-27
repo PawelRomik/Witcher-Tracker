@@ -12,7 +12,7 @@ Track The Witcher and The Witcher 3 quests!
 ## Screenshots :tv:
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/ac7f86ba-d2a0-49ed-9af4-f9cc6d82bab7" alt="Hub"/>
+    <img src="https://github.com/user-attachments/assets/d82bea50-049f-4b30-bec9-7a9f822812e7" alt="Hub"/>
 </p>
 
 <p align="center">
